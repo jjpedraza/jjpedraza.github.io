@@ -1,40 +1,402 @@
 JUAN JOSE PEDRAZA PERALES
 Informatico
+mifoto = img/mifoto.jpg
+
+¡Hola! Me complace presentarte mi perfil profesional y las habilidades que puedo aportar a tu proyecto. Soy originario de Aldama, Tamaulipas, y durante muchos años fui reconocido en la región por mi trabajo en el campo de la informática. Como programador con pasión por la tecnología, he adquirido múltiples habilidades y conocimientos que me convierten en un aliado tecnológico ideal para contribuir a tu proyecto.
+
+Actualmente soy Freelance en diversas plataformas contibuyendo asi al desarrollo en diferentes paises y Restauro Fotos dañadas en  mis tiempos libres por 
+medio de facebook en mi pagina de FotoFix Pedraza
 
 
-Mi vida laboral en informatica empieza en Aldama, Tamaulipas lugar donde soy originario, alli fue muy reconocido por mi trabajo, durante muchos años
-tuve un negocio de soporte que atendia a la mayoria del municipio; asi mismo di 10 años clases de informatica en las escuela de la region. Soy un 
-Programador con pasion por la Tecnologia, me jacto de contar con multiples habilidades y conocimientos que han de mi un aliado tecnologico ideal
-para contribuir a tu proyecto.
+"Soy un profesional en informática con una amplia experiencia en el desarrollo de software personalizado. Sin embargo, mi enfoque va más allá de la programación, ya que me apasiona impulsar el crecimiento y el éxito de los negocios. Mi objetivo es crear oportunidades para que las empresas alcancen nuevas metas y logren resultados excepcionales. Con mis habilidades y conocimientos, no solo escribo código, sino que también mejoro los procesos empresariales, optimizo la eficiencia y genero soluciones innovadoras que permiten llegar más lejos."
 
-Actualmente soy Freelance en diversas plataformas contibuyendo asi al desarrollo en diferentes paises.
 
-Yo digo, que no solo escribo Software, mejoro a los negocios y creo las opotunidades para llegar mas lejos.
+Mis áreas de especialización son las siguientes:
 
-¿Que es lo que puedo hacer por ti?
-- Diseño y Desarrollo de Paginas Web a la medida de tu idea, Tu lo imaginas yo lo creo!
-- Restauro Fotografias Dañadas, un hobie que se convirtio en un trabajo reconocido por miles, es el caso de mi pagina de facebook, [https://facebook.com/fotofix.pedraza] que 
-a acumulado mas 7mil seguidos de mi trabajo con las fotos. 
-- Construyo Aplicaciones Web: el futuro esta en la nube, es por eso que ahora solo escribo software basado en esa tendencia, son demasiadas las ventajas y mayores los 
-alcances para ti como consumidor, te puedo construir el sistema que resuleva las necesidades de tu negocio o idea en tu mente.
-- Reparacion de Computadoras: Puedo reparar cualquier computadora que este fallando, hacer analisis y diagnosticos muy exhaustivos sobre el problema, asi como el asesoramiento
-correcto para que tu solo de dediques a trabajar con el equipo sin pensar en los pormenores de los detalles tecnicos
-- Especialista en Impresoras EPSON, he ganado experiencia en la reparacion de impresoras de la marcas gracias ami trabajo en el Centro de Servicio.
+- Diseño y desarrollo de páginas web a medida: Puedo convertir tus ideas en realidad, creando páginas web personalizadas que se ajusten a tus necesidades.
+
+- Restauración de fotografías dañadas: A través de mi página de Facebook, FotoFix Pedraza, he ganado reconocimiento por mi habilidad para restaurar fotografías dañadas. Con más de 7,000 seguidores, he tenido la oportunidad de trabajar en miles de fotos y devolverles su antiguo esplendor.
+
+- Construcción de aplicaciones web: Me especializo en desarrollar software basado en la tendencia de la computación en la nube. Las aplicaciones web ofrecen numerosas ventajas y mayores alcances para los usuarios, y puedo construir el sistema que resuelva las necesidades de tu negocio o idea.
+
+- Reparación de computadoras: Poseo amplia experiencia en la reparación de computadoras y puedo realizar análisis y diagnósticos exhaustivos para solucionar cualquier problema. Además, puedo brindarte asesoramiento técnico para que puedas utilizar tu equipo sin preocuparte por los detalles técnicos.
+
+- Especialista en impresoras Epson: Gracias a mi trabajo en un Centro de Servicio, he adquirido experiencia en la reparación de impresoras de la marca Epson.
+
+- Consultor de Sistemas: Puedo asesorarte en tu proyecto y resolver todas tus dudas.
+
+"Si estás buscando un profesional confiable y comprometido, estoy aquí para ayudarte. Puedo mejorar tus negocios, desarrollar soluciones web personalizadas y brindarte el soporte técnico necesario. No dudes en contar con mis servicios para alcanzar tus metas."
+
 
 
 A continuacion te muestro un poco de lo que he realizado:
+
 PORTAFOLIO DE SISTEMAS:
 
+Nombre = GYM ALVARADOS
+Imagen = img/alvarado.png
+Fecha =  Junio 2016
+Descripcion = Aplicación instalada localmente con servidor apache y mysql. Aplicación realizada para llevar el control de las membresías y entradas al GYM.
+Tecnologia: PHP, MYSQL y HTML5 y CSS3
+GitHub = ""
+
+Nombre = Punto de Venta GestioAdmin
+Imagen = img/sys.png
+Fecha =  Diciembre 2015
+Descripcion = Este fue un software que se realizo para un negocio de aborrotes con sucursales que necesitaban conectarlas a traves de su intranet
+Tecnologia: PHP, MYSQL y HTML5 y CSS3
+GitHub = ""
+
+
+Nombre = Crece 1.0
+Imagen = img/crece1.png
+Fecha =  Diciembre 2014
+Descripcion = Una aplicación basada en PHP y Mysql, ejecutándose a través de la red de la empresa. Se diseño para ser implementada en Tablets y Computadoras; Gestiona los préstamos y la cartera vencida de Crece y Mas; asi mismo solicitudes y estudios socioeconómicos.   subida a internet. 
+Tecnologia: HTML5, AJAX y CSS3, php MYSQL
+GitHub = "https://github.com/jjpedraza/crece"
+
+
+
+Nombre = Sistema Despacho Guerrero Silva
+Imagen = img/guerrero.png
+Fecha =  Marzo 2015
+Descripcion = Sistema de Contabilidad desarrollado en la nube para la administración de sus clientes, y el calculo de impuestos, según las necesidades de la empresa. Desarrollado con php, html5, css3 y base de datos mysql
+Tecnologia: HTML5, AJAX y CSS3, php MYSQL
+GitHub = ""
+
+
+Nombre = Punto de Venta Refac. Piñon
+Imagen = img/pinon.png
+Fecha =  Marzo 2007
+Descripcion = Desarrolle un Sistema de punto de venta, que administraba distintas sucursales de la Refaccionaria Pinon en Aldama, Tamaulipas.
+Tecnologia: Visual Basic, MSSQL 2000
+GitHub = ""
+
+
+Nombre = Punto de Venta Yamileth Boutique
+Imagen = img/geo1.png
+Fecha =  Marzo 2008
+Descripcion = Desarrolle un Sistema de punto de venta, para gestionar una Boutique
+Tecnologia: Visual Basic, MSSQL 2000
+GitHub = ""
+
+
+Nombre = GePlaDoc Gestor de Plantillas de Word
+Imagen = img/gepladoc.png
+Fecha =  Septiembre 2021
+Descripcion = Funcion en PHP, para invocar un color hex o rgb, aleatorio o continuo. Puede invocarse, varias veces el color y dara uno de los que encuentre; de esta manera en tu diseño podras implementar todos los rosas u otro color de tu preferencia. echo Colorin_Search('Rosa', "hex"); echo Colorin_Search('Rosa', "hex");
+Tecnologia: PHP, MYSQL, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/GePlaDoc"
+
+
+Nombre = Colorin 
+Imagen = 
+Fecha =  Julio 2021
+Descripcion = La aplicacion permite subir un archivo de Word como plantilla (.docx) y sustituir palabras reservadas para variables que se solicitan via API POST y respuesta en JSON; para ser utilizado el archivo de la plantilla rellenado con las variables.
+Tecnologia: php
+GitHub = "https://github.com/jjpedraza/colorin"
+
+Nombre = API MS sqlserver 
+Imagen = img/sqlserver.png
+Fecha =  Agosto 2020
+Descripcion =  en ASP Classic, para servidores que tengan acceso a bases de datos MSSQL-Server; convierte las consultas en JSON. La use en varios proyectos para conectar MySQL a bases de datos MS SQL SERVER, manteniendo una coneccion estable
+Tecnologia: asp
+GitHub = "https://github.com/jjpedraza/colorin"
+
+
+Nombre = Procimart 
+Imagen = img/procimart.png
+Fecha =  Enero 2020
+Descripcion = Es un proyecto para gestior reportes en una base de datos de MS-SQLSERVER de un servidor remoto en la Planta de producción; la aplicacion toma los datos de alli y administra las venta y la oferta del producto
+Tecnologia: asp
+GitHub = "https://github.com/jjpedraza/ProciMart"
+
+Nombre = PcSite to WP
+Imagen = img/pcsite1.png
+Fecha =  Marzo 2021
+Descripcion = Este se trata de un proyecto donde se toma el inventario del proveedor CT, se compara con un inventario local, se procesa y se exporta a WordPress, para alimentar la pagina web de https://pcsite.com.mx 
+Tecnologia: php y html5, css y bootstrap
+GitHub = "https://github.com/jjpedraza/pcsite"
+
+Nombre = Crece 2.0
+Imagen = img/crece2.png
+Fecha =  Marzo 2023
+Descripcion = Esta es la segunda versión de un sistema que había realizado; esta vez con muchas mejoras. Utiliza un reporteador interno para gestionar los reportes, gestion integral y monitoreo de las cuentas.
+Tecnologia: php y html5, css y bootstrap
+GitHub = "https://github.com/jjpedraza/crece2.0"
+
+Nombre = Rintera
+Imagen = img/rintera.png
+Fecha =  Marzo 2021
+Descripcion = El Proyecto Rintera, trata de un framework en php que estoy programando que falicita la gestión de reportes, los centraliza en una tabla con su Id, y gestiona a travez de un buscado. Así como un panel para su administración. Es capaz de convertir consultas sql a diferentes formatos; he integrado las primeras versiones en dos proyectos con éxito. En un futuro muy cercado liberare el web con ejemplos y ayuda para utilizarlo.
+Tecnologia: php y html5, css y bootstrap
+GitHub = "https://github.com/jjpedraza/rintera"
+
+Nombre = Plataforma ITAVU
+Imagen = img/plataforma.png
+Fecha =  Marzo 2021
+Descripcion = El proyecto de la plataforma es un framework que desarrolle para el Instituto Tamaulipeco de Vivienda y Urbanismo, durante mi trabajo como Jefe de Informática; tiene el propósito de crear un ecosistema donde puedan convivir distintas aplicaciones conectadas a las bases de datos de todas las delegaciones del estado, fonapo y otros sistemas. El entorno permite al programador con poner un require de php antes y al final de un archivo php, con ciertos parámetros ya tiene una aplicación hecha, gestionada por la plataforma su acceso, enlaces, entornos y disponibilidad de datos; incluso su diseño; todo esto le da a los programadores del Instituto mas tiempo y libertad a la hora de programar. Entre los temas que cubre es la gestión de mapas de las reservas, manejo de personal, pases de salida, gestión de cobranza y manejo de los diferentes programas sociales llevados por el instituto.
+Tecnologia: php y html5, css y bootstrap
+GitHub = ""
+
+
+Nombre = GoLink
+Imagen = img/go.png
+Fecha = Octubre 2020
+Descripcion = Application para subir archivos, adminsitrarlos y generar hipervinculos. 
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/GoLink "
+
+Nombre = Ordenes
+Imagen = img/ordenes.png
+Fecha = Enero 2023
+Descripcion = Sistema interno para gestionar las ordenes de servicio para la empresa Computodo Tampico 
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+
+Nombre = Muestralo MX
+Imagen = img/muestralo.png
+Fecha = Junio 2023
+Descripcion = Sistema para construir catalagos web, con diferentes elementos, el usuario se registra y construye su propia web de catalago, productos, precios, carrito, redes sociales, video, etc.
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+
+
 PORTAFOLIO DE PAGINAS WEB:
+
+Nombre = Pagina Web de ComputodoTampico
+Imagen = img/computodo1.png, img/computodo2.png
+Fecha = Julio 2016
+Descripcion = Sitio web optimizado con Responsive Design para adaptarse a los diferentes dispositivos. Realizado para recibir cotizaciones al correo y que en el asunto diga la MARCA y que tipo de EQUIPO es, así como cuando le den responder se envié a correo cliente. https://computodotampico.com/ 
+Tecnologia = PHP, MYSQL y HTML5 y CSS3
+GitHub = "https://github.com/jjpedraza/computodo/"
+
+
+Nombre = OFERTAM 2015-2016
+Imagen = img/ofertam.png
+Fecha = Noviembre 2015
+Descripcion = La idea del proyecto fue de imprenta de querer dar un servicio extra a sus clientes, al publicar las tarjetas y publicidad que les hacía en una página web llamada OFERTAM.  Diseñe el Sitio, así como el Logo; el proyecto al final no salió a la luz por decisiones administrativas de la empresa.
+Tecnologia = PHP, MYSQL y HTML5 y CSS3
+GitHub = ""
+
+
+Nombre = Super Equipos SA de CV
+Imagen = img/superequipos.png
+Fecha = Octubre 2015
+Descripcion = Página web realizada para vender a través de internet sus productos, y los que se introdujeran con 0 pesos, pudiera el usuario pedir una cotización.  De esta manera manejar las cotizaciones. www.superequipos.com
+Tecnologia = PHP, MYSQL y HTML5 y CSS3
+GitHub = ""
+
+Nombre = AleMazaltan
+Imagen = img/ale.png
+Fecha = Enero 2009 - Marzo 2014
+Descripcion = Mazatlán I. A. P  Diseño de la Pagina Web, www.alemazatlan.com, Promocionales y Asesoría de imagen corporativa. 
+Tecnologia = HTML y CSS3
+GitHub = "https://github.com/jjpedraza/alemazatlan"
+
+Nombre = Asociacion de Transplantes AMECOD 
+Imagen = img/amecod.png
+Fecha = Febrero 2013
+Descripcion = Diseño de la Pagina Web www.amecod.org, Promocionales y Asesoría de imagen corporativa. Asociacion Mexicana de Coordinadores de Traspantes Diseñador Web Dr. Susana Perez Mazatlan, Sinaloa www.amecod.org, Página web para recabar datos y hacer listados. 
+Tecnologia = HTML y CSS3
+GitHub = "https://github.com/jjpedraza/amecod"
+
+Nombre = PASTORAL JUVENIL DIOCESIS TUXPAN
+Imagen = img/diocesis.png
+Fecha = Septiempre 2008
+Descripcion = Sitio Web de la Pastoral Juvenil, que incluye uno de los diseños más pulcros con transparencias en color blanco y azul, audio y animaciones, así como un blog, Chat, Galería y servidor de correos.  
+Tecnologia = HTML y CSS3
+GitHub = ""
+
+Nombre = SANTI MARTINEZ Fotografia
+Imagen = img/martinez.png
+Fecha = Enero 2009
+Descripcion = Pagina web para galeria de fotos
+Tecnologia = HTML y CSS3
+GitHub = ""
+
+
+Nombre = Escritor Alejandro Espinoza
+Imagen = img/espinosa.png
+Fecha = Agosto 2006
+Descripcion = Pagina Web para Comercializar el BetSeller del escritor
+Tecnologia = HTML y CSS3
+GitHub = "https://github.com/jjpedraza/legionario"
+
+
+Nombre = Pagina Web de Aldama 2002 - 2005
+Imagen = img/aldama2002.png
+Fecha = Febrero 2002
+Descripcion = La primera vez que se hizo la pagina web del Ayuntamiento del Municipio de Aldama,www.aldama.gob.mx me encargue de su gestion y desarrollo
+Tecnologia = HTML y ASP
+GitHub = ""
+
+Nombre = Pagina Web de Aldama 2005-2007
+Imagen = img/aldama2005.png, img/aldama20052.png
+Fecha = Febrero 2002
+Descripcion = Diseño de la Pagina Web del Municipio de Aldama, Tamaulipas www.aldama.gob.mx
+Tecnologia = HTML, FLASH y ASP
+GitHub = ""
+
+Nombre = Pagina Web de Soto la Marina 2005-2007
+Imagen = img/sotolamarina.png
+Fecha = Febrero 2005
+Descripcion = Diseño de la Pagina Web del Municipio de Soto la Marina, Tamaulipas
+Tecnologia = HTML y ASP
+GitHub = "https://github.com/jjpedraza/sotolamarina"
+
+Nombre = Pagina Web del Museo de Aldama 2005
+Imagen = img/museo2005.png
+Fecha = Febrero 2005
+Descripcion = Pagina del Museo de Aldama Tamaulipas, www.museo.aldama.gob.mx
+Tecnologia = HTML y FLASH
+GitHub = ""
+
+Nombre = Pagina Web del DIF de Aldama 2005
+Imagen = img/dif2005.png
+Fecha = Febrero 2005
+Descripcion = Me toco diseñar tambien la pagina del DIF municipal de Aldama, Tamaulipas
+Tecnologia = HTML y FLASH
+GitHub = ""
+
+Nombre = Pagina Web del DIF de Aldama 2005
+Imagen = img/dif2005.png
+Fecha = Febrero 2005
+Descripcion = Me toco diseñar tambien la pagina del DIF municipal de Aldama, Tamaulipas
+Tecnologia = HTML y FLASH
+GitHub = ""
+
+Nombre = Pagina Web del Ayuntamiento de Aldama 2011
+Imagen = img/aldama2011.png, img/aldama2011-2.png
+Fecha = Octubre 2011
+Descripcion = Diseño de la Pagina web de Aldama, Tamaulipas del 2011
+Tecnologia = HTML y CSS
+GitHub = ""
+
+Nombre = Pagina Web del DIF Municipal de Aldama, Tamaulipas 2011
+Imagen = img/dif2011.png
+Fecha = Octubre 2011
+Descripcion = Diseño de la Pagina web de DIF Aldama, Tamaulipas del 2011
+Tecnologia = HTML y CSS
+GitHub = ""
+
+
+Nombre = Pagina Web del DIF Municipal de Aldama, Tamaulipas 2011
+Imagen = img/dif2011.png
+Fecha = Octubre 2011
+Descripcion = Diseño de la Pagina web de DIF Aldama, Tamaulipas del 2011
+Tecnologia = HTML y CSS
+GitHub = ""
+
+Nombre = Pagina Web del Museo Municipal de Aldama, Tamaulipas 2013
+Imagen = img/museo2011.png, img/museo2011-2.png
+Fecha = Febrero 2013
+Descripcion = Diseño de la Pagina web del Museo Regional de Aldama, Tamaulipas del 2011
+Tecnologia = HTML y CSS
+GitHub = "https://github.com/jjpedraza/MuseoAldama2013"
+
+
+Nombre = LAGUNA MADRE  Salts & Chemicals SA de CV Pagina Web
+Imagen = img/laguna.png
+Fecha = Febrero 2012
+Descripcion = Desarrolle el sitio en HTML5 con CSS3, bajo la idea del cliente. Utilizando los colores de la empresa y el catálogo de ventas. La hice en Ingles y en español. 
+Tecnologia = HTML y CSS
+GitHub = "https://github.com/jjpedraza/lagunamadre"
+
+
+Nombre = Pagina de la Casa Hogar de Aldama, Tam.
+Imagen = img/dvina.png
+Fecha = Febrero 2013
+Descripcion = Realizada para difundir información referente a la casa hogar, asi como para recibir donativos.
+Tecnologia = HTML y CSS
+GitHub = ""
+
+
+Nombre = Pagina de la Boutique Georgina SJ
+Imagen = img/geoweb.png
+Fecha = Febrero 2013
+Descripcion = Proyecto realizado en WordPress; con tema a la medida, y enlazado a la tienda en Facebook del cliente. Se configuro un plug-in de DHL para la paquetería y Pago en línea con tarjeta.
+Tecnologia = WordPress, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/georginasj"
+
+
+
+
+Nombre = Pagina web de la Orginanizacion HeroesCampesinos
+Imagen = img/go.png
+Fecha = Marzo 2020
+Descripcion = Pagina Web para la Organización Heros Campesinos del Bicentenario. www.heroescampesinos.org
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/WebSite-HeroesCampesinos"
+
+Nombre = Computodo Tampico 2023
+Imagen = img/computodo2023.png
+Fecha = Mayo 2023
+Descripcion = Pagina Web para Computodo Tampico, se una gestion con apis para traer equipos los proveedores a la pagina web.
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+Nombre = Star Fence Contracting
+Imagen = img/star.png
+Fecha = Ene 2023
+Descripcion = Pagina Web para una empresa de Fabricacion de cercados en USA, www.starfencecontracting.online
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+
+Nombre = RejuveneSpa.com
+Imagen = img/rejuvene.png
+Fecha = Mayo 2023
+Descripcion = Pagina Web Rejuve Spa Medical en Mazatlan, www.rejuvenespa.com
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/rejuvenespa.com"
+
+
+
 
 PORTAFOLIO DE RESTAURACION DE FOTOS:
 
 
 REGISTRO LABORAL:
 
-Actualmente,
+2023 Actualmente, 
 Tec. de Impresoras
 EQUICSA SA de CV, Tampico Tamaulipas. [www.computodotampico.com]
+-----------------------------------
+2017 - 2022 INSTITUTO TAMAULIPECO DE VIVIENDA Y URBANISMO. Cd. Victoria, tam.
+JEFE DE INFORMATICA
+Dirección de las areas de informatica de los 43 municipios del Estado
+de Tamaulipas en México, durante mi gestion desarrolle la Plataforma
+de Sistemas ITAVU, la cual reemplazo los sistemas obsoletos con los
+que contaba y permitio crear un ecosistema interconectado con todas
+las dependencias de gobierno federal y estatal, entre otras mejoras a
+dicha area del instituto.
+--------------------------
+2016-2017 Sistemas EQUICSA Técnico
+Tampico, Tamaulipas.
+Reparación de Impresoras de la marca EPSON
+-------------------------------------------------
+2002-2007,
+2011-2013
+
+Gobierno Municipal Jefe de Informática
+Aldama, Tamaulipas
+Desarrollo de las paginas web y gestion de los sistemas
+--------------------------------------------
+2005-2007 Gobierno Municipal WebMaster
+
+Soto la Marina, Tamaulipas
+Desarrollo de las paginas web
+-----------------------------
+1999-2010 Insituto de Estudios Profesionales en Informatica Aldama, Tamaulipas
+Profesor
+Me desempeñe 10 años como profesor de informatica
+
+
+
+
 
 
 Si estas interesado en mis servicios puedes contactarme:
