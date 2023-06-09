@@ -1,6 +1,7 @@
 # Juan José Pedraza Perales
 <h3>Bienvenido a mi Perfil Profesional</h3>
 
+|  | |
 | --- | --- |
 | <img src="img/mifoto.jpg" alt="Foto de perfil" width="200px"> <h3>Informatico</h3>| ¡Hola! Me complace presentarte mi perfil profesional y las habilidades que puedo aportar a tu proyecto. Soy originario de Aldama, Tamaulipas, y durante muchos años fui reconocido en la región por mi trabajo en el campo de la informática. Como programador con pasión por la tecnología, he adquirido múltiples habilidades y conocimientos que me convierten en un aliado tecnológico ideal para contribuir a tu proyecto. |
 
