@@ -1,14 +1,15 @@
-JUAN JOSE PEDRAZA PERALES
-Informatico
+Columna 1:
+
 mifoto = img/mifoto.jpg
+JUAN JOSE PEDRAZA PERALES
+Desarrollador Full Stack
 
 ¡Hola! Me complace presentarte mi perfil profesional y las habilidades que puedo aportar a tu proyecto. Soy originario de Aldama, Tamaulipas, y durante muchos años fui reconocido en la región por mi trabajo en el campo de la informática. Como programador con pasión por la tecnología, he adquirido múltiples habilidades y conocimientos que me convierten en un aliado tecnológico ideal para contribuir a tu proyecto.
+"Soy un profesional en informática con una amplia experiencia en el desarrollo de software personalizado. Sin embargo, mi enfoque va más allá de la programación, ya que me apasiona impulsar el crecimiento y el éxito de los negocios. Mi objetivo es crear oportunidades para que las empresas alcancen nuevas metas y logren resultados excepcionales. Con mis habilidades y conocimientos, no solo escribo código, sino que también mejoro los procesos empresariales, optimizo la eficiencia y genero soluciones innovadoras que permiten llegar más lejos."
+
 
 Actualmente soy Freelance en diversas plataformas contibuyendo asi al desarrollo en diferentes paises y Restauro Fotos dañadas en  mis tiempos libres por 
 medio de facebook en mi pagina de FotoFix Pedraza
-
-
-"Soy un profesional en informática con una amplia experiencia en el desarrollo de software personalizado. Sin embargo, mi enfoque va más allá de la programación, ya que me apasiona impulsar el crecimiento y el éxito de los negocios. Mi objetivo es crear oportunidades para que las empresas alcancen nuevas metas y logren resultados excepcionales. Con mis habilidades y conocimientos, no solo escribo código, sino que también mejoro los procesos empresariales, optimizo la eficiencia y genero soluciones innovadoras que permiten llegar más lejos."
 
 
 Mis áreas de especialización son las siguientes:
@@ -25,6 +26,8 @@ Mis áreas de especialización son las siguientes:
 
 - Consultor de Sistemas: Puedo asesorarte en tu proyecto y resolver todas tus dudas.
 
+- Reparacion y Mantenimiento de Computadoras: De manera particular como todo buen ingeniero doy servicio para soporte tenico asi como en polizas de mantenimiento para empresas.
+
 "Si estás buscando un profesional confiable y comprometido, estoy aquí para ayudarte. Puedo mejorar tus negocios, desarrollar soluciones web personalizadas y brindarte el soporte técnico necesario. No dudes en contar con mis servicios para alcanzar tus metas."
 
 
@@ -32,6 +35,58 @@ Mis áreas de especialización son las siguientes:
 A continuacion te muestro un poco de lo que he realizado:
 
 PORTAFOLIO DE SISTEMAS:
+
+Nombre = Ordenes
+Imagen = img/ordenes.png
+Fecha = Enero 2023
+Descripcion = Sistema interno para gestionar las ordenes de servicio para la empresa Computodo Tampico 
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+
+Nombre = Muestralo MX
+Imagen = img/muestralo.png
+Fecha = Junio 2023
+Descripcion = Sistema para construir catalagos web, con diferentes elementos, el usuario se registra y construye su propia web de catalago, productos, precios, carrito, redes sociales, video, etc.
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+Nombre = PcSite to WP
+Imagen = img/pcsite1.png
+Fecha =  Marzo 2021
+Descripcion = Este se trata de un proyecto donde se toma el inventario del proveedor CT, se compara con un inventario local, se procesa y se exporta a WordPress, para alimentar la pagina web de https://pcsite.com.mx 
+Tecnologia: php y html5, css y bootstrap
+GitHub = "https://github.com/jjpedraza/pcsite"
+
+Nombre = Crece 2.0
+Imagen = img/crece2.png
+Fecha =  Marzo 2023
+Descripcion = Esta es la segunda versión de un sistema que había realizado; esta vez con muchas mejoras. Utiliza un reporteador interno para gestionar los reportes, gestion integral y monitoreo de las cuentas.
+Tecnologia: php y html5, css y bootstrap
+GitHub = "https://github.com/jjpedraza/crece2.0"
+
+Nombre = Rintera
+Imagen = img/rintera.png
+Fecha =  Marzo 2021
+Descripcion = El Proyecto Rintera, trata de un framework en php que estoy programando que falicita la gestión de reportes, los centraliza en una tabla con su Id, y gestiona a travez de un buscado. Así como un panel para su administración. Es capaz de convertir consultas sql a diferentes formatos; he integrado las primeras versiones en dos proyectos con éxito. En un futuro muy cercado liberare el web con ejemplos y ayuda para utilizarlo.
+Tecnologia: php y html5, css y bootstrap
+GitHub = "https://github.com/jjpedraza/rintera"
+
+Nombre = Plataforma ITAVU
+Imagen = img/plataforma.png
+Fecha =  Marzo 2021
+Descripcion = El proyecto de la plataforma es un framework que desarrolle para el Instituto Tamaulipeco de Vivienda y Urbanismo, durante mi trabajo como Jefe de Informática; tiene el propósito de crear un ecosistema donde puedan convivir distintas aplicaciones conectadas a las bases de datos de todas las delegaciones del estado, fonapo y otros sistemas. El entorno permite al programador con poner un require de php antes y al final de un archivo php, con ciertos parámetros ya tiene una aplicación hecha, gestionada por la plataforma su acceso, enlaces, entornos y disponibilidad de datos; incluso su diseño; todo esto le da a los programadores del Instituto mas tiempo y libertad a la hora de programar. Entre los temas que cubre es la gestión de mapas de las reservas, manejo de personal, pases de salida, gestión de cobranza y manejo de los diferentes programas sociales llevados por el instituto.
+Tecnologia: php y html5, css y bootstrap
+GitHub = ""
+
+
+Nombre = GoLink
+Imagen = img/go.png
+Fecha = Octubre 2020
+Descripcion = Application para subir archivos, adminsitrarlos y generar hipervinculos. 
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/GoLink "
+
 
 Nombre = GYM ALVARADOS
 Imagen = img/alvarado.png
@@ -111,60 +166,36 @@ Descripcion = Es un proyecto para gestior reportes en una base de datos de MS-SQ
 Tecnologia: asp
 GitHub = "https://github.com/jjpedraza/ProciMart"
 
-Nombre = PcSite to WP
-Imagen = img/pcsite1.png
-Fecha =  Marzo 2021
-Descripcion = Este se trata de un proyecto donde se toma el inventario del proveedor CT, se compara con un inventario local, se procesa y se exporta a WordPress, para alimentar la pagina web de https://pcsite.com.mx 
-Tecnologia: php y html5, css y bootstrap
-GitHub = "https://github.com/jjpedraza/pcsite"
-
-Nombre = Crece 2.0
-Imagen = img/crece2.png
-Fecha =  Marzo 2023
-Descripcion = Esta es la segunda versión de un sistema que había realizado; esta vez con muchas mejoras. Utiliza un reporteador interno para gestionar los reportes, gestion integral y monitoreo de las cuentas.
-Tecnologia: php y html5, css y bootstrap
-GitHub = "https://github.com/jjpedraza/crece2.0"
-
-Nombre = Rintera
-Imagen = img/rintera.png
-Fecha =  Marzo 2021
-Descripcion = El Proyecto Rintera, trata de un framework en php que estoy programando que falicita la gestión de reportes, los centraliza en una tabla con su Id, y gestiona a travez de un buscado. Así como un panel para su administración. Es capaz de convertir consultas sql a diferentes formatos; he integrado las primeras versiones en dos proyectos con éxito. En un futuro muy cercado liberare el web con ejemplos y ayuda para utilizarlo.
-Tecnologia: php y html5, css y bootstrap
-GitHub = "https://github.com/jjpedraza/rintera"
-
-Nombre = Plataforma ITAVU
-Imagen = img/plataforma.png
-Fecha =  Marzo 2021
-Descripcion = El proyecto de la plataforma es un framework que desarrolle para el Instituto Tamaulipeco de Vivienda y Urbanismo, durante mi trabajo como Jefe de Informática; tiene el propósito de crear un ecosistema donde puedan convivir distintas aplicaciones conectadas a las bases de datos de todas las delegaciones del estado, fonapo y otros sistemas. El entorno permite al programador con poner un require de php antes y al final de un archivo php, con ciertos parámetros ya tiene una aplicación hecha, gestionada por la plataforma su acceso, enlaces, entornos y disponibilidad de datos; incluso su diseño; todo esto le da a los programadores del Instituto mas tiempo y libertad a la hora de programar. Entre los temas que cubre es la gestión de mapas de las reservas, manejo de personal, pases de salida, gestión de cobranza y manejo de los diferentes programas sociales llevados por el instituto.
-Tecnologia: php y html5, css y bootstrap
-GitHub = ""
 
 
-Nombre = GoLink
-Imagen = img/go.png
-Fecha = Octubre 2020
-Descripcion = Application para subir archivos, adminsitrarlos y generar hipervinculos. 
-Tecnologia = PHP, MYSQL, JAVASCRIPT
-GitHub = "https://github.com/jjpedraza/GoLink "
-
-Nombre = Ordenes
-Imagen = img/ordenes.png
-Fecha = Enero 2023
-Descripcion = Sistema interno para gestionar las ordenes de servicio para la empresa Computodo Tampico 
-Tecnologia = PHP, MYSQL, JAVASCRIPT
-GitHub = ""
-
-
-Nombre = Muestralo MX
-Imagen = img/muestralo.png
-Fecha = Junio 2023
-Descripcion = Sistema para construir catalagos web, con diferentes elementos, el usuario se registra y construye su propia web de catalago, productos, precios, carrito, redes sociales, video, etc.
-Tecnologia = PHP, MYSQL, JAVASCRIPT
-GitHub = ""
 
 
 
 PORTAFOLIO DE PAGINAS WEB:
+
+
+Nombre = Computodo Tampico 2023
+Imagen = img/computodo2023.png
+Fecha = Mayo 2023
+Descripcion = Pagina Web para Computodo Tampico, se una gestion con apis para traer equipos los proveedores a la pagina web.
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+Nombre = Star Fence Contracting
+Imagen = img/star.png
+Fecha = Ene 2023
+Descripcion = Pagina Web para una empresa de Fabricacion de cercados en USA, www.starfencecontracting.online
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = ""
+
+
+Nombre = RejuveneSpa.com
+Imagen = img/rejuvene.png
+Fecha = Mayo 2023
+Descripcion = Pagina Web Rejuve Spa Medical en Mazatlan, www.rejuvenespa.com
+Tecnologia = PHP, MYSQL, JAVASCRIPT
+GitHub = "https://github.com/jjpedraza/rejuvenespa.com"
+
 
 Nombre = Pagina Web de ComputodoTampico
 Imagen = img/computodo1.png, img/computodo2.png
@@ -331,30 +362,6 @@ Descripcion = Pagina Web para la Organización Heros Campesinos del Bicentenario
 Tecnologia = PHP, MYSQL, JAVASCRIPT
 GitHub = "https://github.com/jjpedraza/WebSite-HeroesCampesinos"
 
-Nombre = Computodo Tampico 2023
-Imagen = img/computodo2023.png
-Fecha = Mayo 2023
-Descripcion = Pagina Web para Computodo Tampico, se una gestion con apis para traer equipos los proveedores a la pagina web.
-Tecnologia = PHP, MYSQL, JAVASCRIPT
-GitHub = ""
-
-Nombre = Star Fence Contracting
-Imagen = img/star.png
-Fecha = Ene 2023
-Descripcion = Pagina Web para una empresa de Fabricacion de cercados en USA, www.starfencecontracting.online
-Tecnologia = PHP, MYSQL, JAVASCRIPT
-GitHub = ""
-
-
-Nombre = RejuveneSpa.com
-Imagen = img/rejuvene.png
-Fecha = Mayo 2023
-Descripcion = Pagina Web Rejuve Spa Medical en Mazatlan, www.rejuvenespa.com
-Tecnologia = PHP, MYSQL, JAVASCRIPT
-GitHub = "https://github.com/jjpedraza/rejuvenespa.com"
-
-
-
 
 PORTAFOLIO DE RESTAURACION DE FOTOS:
 
@@ -397,9 +404,9 @@ Me desempeñe 10 años como profesor de informatica
 
 
 
+Puedes contactarme al
+Correo: printepolis@gmail.com
+Whatsapp: 8343088602
+Facebook: https://facebook.com/fotofix.Pedraza
 
-
-Si estas interesado en mis servicios puedes contactarme:
-Mi Correo: printepolis@gmail.com
-Mi Whatsapp: 8343088602
 
