@@ -3,749 +3,1453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Juan Jose Pedraza</title>
-    <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-    <!-- fONT AWESOME -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-          
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- ssweet alert 2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+        <!-- Enlazar CSS Floating WhatsApp -->
+    <link rel="stylesheet" href="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.css">
+    <!-- Enlazar JS Floating WhatsApp -->
+    <script type="text/javascript" src="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.js"></script>
 
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
-    <!-- Font Awesome JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <!-- jQuery and Bootstrap Bundle (includes Popper) JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
- 
-
-    <!-- Scripts de Bootstrap -->
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.7.0.js"
-        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     
 
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-  <!-- Enlazar CSS Floating WhatsApp -->
-  <link rel="stylesheet" href="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.css">
-  <!-- Enlazar JS Floating WhatsApp -->
-  <script type="text/javascript" src="https://rawcdn.githack.com/jerfeson/floating-whatsapp/0310b4cd88e9e55dc637d1466670da26b645ae49/floating-wpp.min.js"></script>
-
-=======
-    <title>JJPedraza: En construccion </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
->>>>>>> 7b68d7f930ac6f2685b05e80cb744c24f2b67c0d
+    <title>Juan José Pedraza - Root Access</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap');
+        
+        :root {
+            --monokai-bg: #272822;
+            --monokai-darker: #1e1f1c;
+            --monokai-lighter: #3e3d32;
+            --monokai-pink: #26f93b;
+            --monokai-purple: #ae81ff;
+            --monokai-green: #a6e22e;
+            --monokai-orange: #fd971f;
+            --monokai-yellow: #e6db74;
+            --monokai-blue: #66d9ef;
+            --monokai-comment: #75715e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            background-color: #ffd700;
-            color: #333;
-            text-align: center;
+            font-family: 'Share Tech Mono', 'VT323', monospace;
+            background: var(--monokai-bg);
+            color: var(--monokai-green);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            padding-top: 100px;
         }
+        
+        /* Matrix rain background effect */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at center, transparent 0%, var(--monokai-darker) 100%),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(102, 217, 239, 0.03) 2px,
+                    rgba(102, 217, 239, 0.03) 4px
+                );
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        /* Scanlines más sutiles */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15) 0px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 1;
+            animation: flicker 0.15s infinite;
+        }
+        
+        @keyframes flicker {
+            0% { opacity: 0.97; }
+            50% { opacity: 1; }
+            100% { opacity: 0.97; }
+        }
+        
+        /* Top Navigation Bar */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--monokai-darker);
+            border-bottom: 2px solid #059b1d;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 1001;
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.3);
+        }
+        
+        .nav-profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .nav-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #20371a;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-avatar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.8);
+        }
+        
+        .nav-info {
+            flex: 1;
+        }
+        
+        .nav-name {
+            font-size: 18px;
+            color: #3cff00;
+            font-weight: 700;
+            text-shadow: 0 0 10px #3cff00;
+            margin-bottom: 3px;
+        }
+        
+        .nav-title {
+            font-size: 12px;
+            color: var(--monokai-green);
+        }
+        
+        .nav-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+            font-size: 12px;
+            color: var(--monokai-green);
+        }
+        
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--monokai-pink);
+            box-shadow: 0 0 15px var(--monokai-pink);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
         .container {
-            max-width: 500px;
-            margin-top: 10%;
-            padding: 20px;
-            background: #fff;
-            border: 3px solid #333;
-            border-radius: 10px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 2;
         }
-        .btn-warning {
-            background-color: #ffcc00;
-            border: none;
+        
+        /* Terminal Header con estilo hacker */
+        .terminal-header {
+            background: var(--monokai-darker);
+            border: 2px solid var(--monokai-pink);
+            padding: 25px;
+            margin-bottom: 40px;
+            position: relative;
+            box-shadow: 
+                0 0 20px rgba(249, 38, 114, 0.3),
+                inset 0 0 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+        
+        .terminal-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--monokai-pink), transparent);
+            animation: scan 3s linear infinite;
+        }
+        
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 200%; }
+        }
+        
+        .header-top {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--monokai-lighter);
+        }
+        
+        .terminal-icon {
+            font-size: 28px;
+            color: var(--monokai-pink);
+            text-shadow: 0 0 10px var(--monokai-pink);
+        }
+        
+        .terminal-title {
+            font-size: 28px;
+            color: var(--monokai-pink);
+            font-weight: 700;
+            text-shadow: 0 0 15px var(--monokai-pink);
+            letter-spacing: 1px;
+        }
+        
+        .terminal-subtitle {
+            font-size: 16px;
+            color: var(--monokai-blue);
+            margin-bottom: 8px;
+            text-shadow: 0 0 8px var(--monokai-blue);
+        }
+        
+        .terminal-location {
+            font-size: 14px;
+            color: var(--monokai-comment);
+            margin-bottom: 15px;
+        }
+        
+        .terminal-prompt {
+            color: var(--monokai-purple);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .prompt-user {
+            color: var(--monokai-orange);
+        }
+        
+        .prompt-path {
+            color: var(--monokai-blue);
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: var(--monokai-green);
+            animation: blink 1s infinite;
+            margin-left: 5px;
+            box-shadow: 0 0 10px var(--monokai-green);
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        /* Secciones */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: var(--monokai-yellow);
+            margin-bottom: 25px;
+            padding: 12px 20px;
+            background: var(--monokai-darker);
+            border-left: 5px solid var(--monokai-yellow);
+            box-shadow: 
+                0 0 20px rgba(230, 219, 116, 0.2),
+                inset 0 0 20px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 0 10px var(--monokai-yellow);
+            font-weight: 600;
+        }
+        
+        .section-title::before {
+            content: "";
+            color: var(--monokai-comment);
+        }
+        
+        /* Project Cards con efecto hacker */
+        .project-card {
+            background: linear-gradient(135deg, var(--monokai-darker) 0%, var(--monokai-bg) 100%);
+            border: 1px solid var(--monokai-lighter);
+            padding: 30px;
+            margin-bottom: 25px;
+            position: relative;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 217, 239, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .project-card:hover::before {
+            left: 100%;
+        }
+        
+        .project-card:hover {
+            border-color: var(--monokai-blue);
+            box-shadow: 
+                0 5px 30px rgba(102, 217, 239, 0.3),
+                inset 0 0 30px rgba(102, 217, 239, 0.05);
+            transform: translateY(-5px);
+        }
+        
+        .project-number {
+            display: inline-block;
+            color: var(--monokai-comment);
+            font-size: 11px;
+            margin-bottom: 1px;
+            letter-spacing: 1px;
+        }
+        
+        .project-title {
+            font-size: 24px;
+            color: var(--monokai-pink);
+            margin-bottom: 1px;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(249, 38, 114, 0.5);
+            letter-spacing: 0.5px;
+        }
+        
+        .project-stack {
+            margin-bottom: 1px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tech-tag {
+            padding: 4px 12px;
+            background: rgba(166, 226, 46, 0.1);
+            border: 1px solid var(--monokai-green);
+            color: var(--monokai-green);
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tech-tag::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--monokai-green);
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%);
+        }
+        
+        .tech-tag:hover {
+            color: var(--monokai-darker);
+            box-shadow: 0 0 15px var(--monokai-green);
+        }
+        
+        .tech-tag:hover::before {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tech-tag span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .project-year {
+            color: var(--monokai-orange);
+            font-size: 13px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .project-desc {
+            color: var(--monokai-blue);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        /* Project Gallery */
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid var(--monokai-lighter);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            filter: brightness(0.8) contrast(1.1);
+        }
+        
+        .project-image:hover {
+            border-color: var(--monokai-pink);
+            box-shadow: 0 0 25px rgba(57, 255, 20, 0.5);
+            filter: brightness(1) contrast(1.2);
+            transform: scale(1.05);
+        }
+        
+        .project-image-placeholder {
+            width: 100%;
+            height: 150px;
+            background: var(--monokai-darker);
+            border: 2px dashed var(--monokai-comment);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--monokai-comment);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .project-image-placeholder:hover {
+            border-color: var(--monokai-green);
+            color: var(--monokai-green);
+        }
+        
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .project-links a {
+            padding: 10px 20px;
+            border: 1px solid var(--monokai-purple);
+            color: var(--monokai-purple);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-links a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--monokai-purple);
+            transition: left 0.3s ease;
+            z-index: 0;
+        }
+        
+        .project-links a:hover::before {
+            left: 0;
+        }
+        
+        .project-links a:hover {
+            color: var(--monokai-darker);
+            box-shadow: 0 0 20px var(--monokai-purple);
+        }
+        
+        .project-links a span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: var(--monokai-darker);
+            border: 1px solid var(--monokai-lighter);
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skill-category::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                var(--monokai-pink), 
+                var(--monokai-purple), 
+                var(--monokai-blue)
+            );
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .skill-category:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .skill-category:hover {
+            border-color: var(--monokai-blue);
+            box-shadow: 0 5px 20px rgba(102, 217, 239, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .skill-category h3 {
+            color: var(--monokai-orange);
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(253, 151, 31, 0.5);
+        }
+        
+        .skill-category h3::before {
+            content: "# ";
+            color: var(--monokai-comment);
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: var(--monokai-green);
+            padding-left: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-category li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--monokai-pink);
+            font-weight: 700;
+        }
+        
+        .skill-category li:hover {
+            color: var(--monokai-yellow);
+            padding-left: 25px;
+        }
+        
+        /* Footer */
+        .terminal-footer {
+            background: var(--monokai-darker);
+            border: 2px solid var(--monokai-purple);
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+            box-shadow: 
+                0 0 20px rgba(174, 129, 255, 0.3),
+                inset 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info a {
+            color: var(--monokai-blue);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .contact-info a:hover {
+            color: var(--monokai-pink);
+            text-shadow: 0 0 15px var(--monokai-pink);
+            transform: scale(1.1);
+        }
+        
+        .footer-signature {
+            color: var(--monokai-comment);
+            font-size: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--monokai-lighter);
+        }
+        
+        .footer-ascii {
+            color: var(--monokai-purple);
+            opacity: 0.5;
+            font-size: 10px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        
+        /* WhatsApp Button Hacker Style */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1000;
+        }
+        
+        .whatsapp-button {
+            width: 70px;
+            height: 70px;
+            background: var(--monokai-darker);
+            border: 2px solid var(--monokai-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 
+                0 0 20px rgba(166, 226, 46, 0.4),
+                inset 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        .whatsapp-button::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent,
+                var(--monokai-green),
+                transparent 30%
+            );
+            animation: rotate 4s linear infinite;
+        }
+        
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+        
+        .whatsapp-button::after {
+            content: "";
+            position: absolute;
+            inset: 3px;
+            background: var(--monokai-darker);
+        }
+        
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            border-color: var(--monokai-pink);
+            box-shadow: 
+                0 0 40px rgba(249, 38, 114, 0.6),
+                inset 0 0 30px rgba(249, 38, 114, 0.2);
+        }
+        
+        .whatsapp-icon {
+            font-size: 36px;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 0 10px var(--monokai-green));
+        }
+        
+        .whatsapp-label {
+            position: absolute;
+            right: 85px;
+            background: var(--monokai-darker);
+            border: 1px solid var(--monokai-green);
+            padding: 12px 18px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            color: var(--monokai-green);
+            font-size: 13px;
+            box-shadow: 0 0 20px rgba(166, 226, 46, 0.3);
+            transform: translateX(10px);
+        }
+        
+        .whatsapp-label::before {
+            content: "> ";
+            color: var(--monokai-pink);
+        }
+        
+        .whatsapp-float:hover .whatsapp-label {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-status {
+                display: none;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .terminal-title {
+                font-size: 22px;
+            }
+            
+            .terminal-subtitle {
+                font-size: 14px;
+            }
+            
+            .project-title {
+                font-size: 20px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                bottom: 25px;
+                right: 25px;
+            }
+            
+            .whatsapp-button {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .whatsapp-icon {
+                font-size: 30px;
+            }
+            
+            .whatsapp-label {
+                display: none;
+            }
+        }
+        
+        /* SweetAlert2 Custom Styles */
+        .swal2-popup {
+            background: var(--monokai-darker) !important;
+            border: 2px solid var(--monokai-pink) !important;
+            box-shadow: 0 0 40px rgba(57, 255, 20, 0.5) !important;
+        }
+        
+        .swal2-title {
+            color: var(--monokai-pink) !important;
+            text-shadow: 0 0 10px var(--monokai-pink) !important;
+        }
+        
+        .swal2-html-container {
+            color: var(--monokai-green) !important;
+            font-family: 'Share Tech Mono', monospace !important;
+        }
+        
+        .swal2-close {
+            color: var(--monokai-pink) !important;
+            text-shadow: 0 0 10px var(--monokai-pink) !important;
+        }
+        
+        .swal2-close:hover {
+            color: var(--monokai-green) !important;
+        }
+        
+        .swal2-image {
+            border: 3px solid var(--monokai-pink) !important;
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.5) !important;
         }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Juan José Pedraza, desarrollador web y diseñador gráfico. Descubre mis proyectos y habilidades.">
+    <meta name="keywords" content="Juan José Pedraza, portafolio, desarrollo web, diseño gráfico, aplicaciones, fotografía">
+    <meta name="author" content="Juan José Pedraza">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portafolio de Juan José Pedraza">
+    <meta property="og:description" content="Explora mis proyectos en desarrollo web, diseño gráfico y fotografía.">    
 </head>
 <body>
-    <div class="container"> 
-        <h1>🚧 Hola, soy Juan Jose Pedraza! 🚧</h1>
-        <h5>Estoy actualizando esta web, por ahora...</h5>
-        <p>Mientras tanto, si necesitas un sistema, contáctame:</p>
-        <form action="https://wa.me/528333909869" method="get" target="_blank">
-            <div class="mb-3">
-                <input type="text" name="text" class="form-control" placeholder="Escribe tu mensaje" required>
-            </div>
-            <button type="submit" class="btn btn-warning w-100">Enviar a WhatsApp</button>
-        </form>
-        <p class="mt-3">También puedes escribirme a:</p>
-        <p><a href="mailto:necesitounsistema@gmail.com" class="text-dark">necesitounsistema@gmail.com</a></p>
-    </div>
-<<<<<<< HEAD
-
-
-
-    <div class="container" id="Servicios">
-        <h1 style="text-align:center">¿Que puedo hacer por ti?</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-code"></i> Diseño y desarrollo de páginas web a medida</h5>
-                        <p class="card-text">Puedo convertir tus ideas en realidad, creando páginas web personalizadas que se ajusten a tus necesidades.</p>
-                    </div>
-                </div>
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-image"></i> Restauración de fotografías dañadas</h5>
-                        <p class="card-text">A través de mi página de Facebook, <a href="https://facebook.com/fotofix.pedraza">FotoFix Pedraza</a>, he ganado reconocimiento por mi habilidad para restaurar fotografías dañadas. Con más de 7,000 seguidores, he tenido la oportunidad de trabajar en miles de fotos y devolverles su antiguo esplendor.</p>
-                    </div>
-                </div>
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-laptop-code"></i> Construcción de aplicaciones web</h5>
-                        <p class="card-text">Me especializo en desarrollar software basado en la tendencia de la computación en la nube. Las aplicaciones web ofrecen numerosas ventajas y mayores alcances para los usuarios, y puedo construir el sistema que resuelva las necesidades de tu negocio o idea.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-tools"></i> Reparación de computadoras</h5>
-                        <p class="card-text">Poseo amplia experiencia en la reparación de computadoras y puedo realizar análisis y diagnósticos exhaustivos para solucionar cualquier problema. Además, puedo brindarte asesoramiento técnico para que puedas utilizar tu equipo sin preocuparte por los detalles técnicos.</p>
-                    </div>
-                </div>
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-print"></i> Especialista en impresoras Epson</h5>
-                        <p class="card-text">Gracias a mi trabajo en un Centro de Servicio, he adquirido experiencia en la reparación de impresoras de la marca Epson.</p>
-                    </div>
-                </div>
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-cogs"></i> Consultor de Sistemas</h5>
-                        <p class="card-text">Puedo asesorarte en tu proyecto y resolver todas tus dudas.</p>
-                    </div>
-                </div>
-                <div class="card specialization-card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-wrench"></i> Reparación y Mantenimiento de Computadoras</h5>
-                        <p class="card-text">De manera particular, como todo buen ingeniero, doy servicio para soporte técnico así como en pólizas de mantenimiento para empresas.</p>
-                    </div>
-                </div>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <div class="nav-profile">
+            <img src="img/foton.jpg" alt="Juan José Pedraza" class="nav-avatar" id="navAvatar">
+            <div class="nav-info">
+                <div class="nav-name">Juan José Pedraza</div>
+                <div class="nav-title">Full Stack Developer | Tampico, TAM</div>
             </div>
         </div>
-        <p style="text-align:center">
-            "Si estás buscando un profesional confiable y comprometido, estoy aquí para ayudarte. Puedo mejorar tus negocios, desarrollar soluciones web personalizadas y brindarte el soporte técnico necesario. No dudes en contar con mis servicios para alcanzar tus metas."
-
-        </p>
-    </div>
-<hr>
-    <div class="container" id="PortafolioAplicaciones">
-      <h1 style="text-align: center;">Portafolio de Aplicaciones:</h1>
-      <p style="text-align: center;">Estas son algunas de los programas que he realizado; a manera de muestra de mi trabajo</p>
-      <div class="row">
-        <!-- Proyecto 1 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/ordenes.png" target="_blank"><img src="img/ordenes.png" class="card-img-top" alt="Ordenes"></a>
-            <div class="card-body">
-              <h5 class="card-title">Ordenes</h5>
-              <p class="card-text"><b>Fecha:</b> Enero 2023</p>
-              <p class="card-text">Descripción: Sistema interno para gestionar las órdenes de servicio para la empresa Computodo Tampico</p>
-              <p class="card-text">Tecnología: PHP, MYSQL, JavaScript</p>
-              <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> GitHub Privado</a> -->
-            </div>
-          </div>
+        <div class="nav-status">
+            <span class="status-indicator"></span>
+            <span>ONLINE</span>
         </div>
-  
-        <!-- Proyecto 2 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/muestralo.png" target="_blank"><img src="img/muestralo.png" class="card-img-top" alt="Muestralo MX"></a>
-            <div class="card-body">
-              <h5 class="card-title">Muestralo MX</h5>
-              <p class="card-text"><b>Fecha:</b> Junio 2023</p>
-              <p class="card-text">Descripción: Sistema para construir catálogos web con diferentes elementos, donde el usuario puede registrar y construir su propia web de catálogo</p>
-              <p class="card-text">Tecnología: PHP, MYSQL, JavaScript</p>
-              <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> GitHub Privado</a> -->
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 3 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/pcsite1.png" target="_blank"><img src="img/pcsite1.png" class="card-img-top" alt="PcSite to WP"></a>
-            <div class="card-body">
-              <h5 class="card-title">PcSite to WP</h5>
-              <p class="card-text"><b>Fecha:</b> Marzo 2021</p>
-              <p class="card-text">Descripción: Proyecto que toma el inventario del proveedor CT, lo compara con un inventario local y lo exporta a WordPress para alimentar la página web de PcSite</p>
-              <p class="card-text">Tecnología: PHP, HTML5, CSS, Bootstrap</p>
-              <a href="https://github.com/jjpedraza/pcsite" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 4 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/crece2.png" target="_blank"><img src="img/crece2.png" class="card-img-top" alt="Crece 2.0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Crece 2.0</h5>
-              <p class="card-text"><b>Fecha:</b> Marzo 2023</p>
-              <p class="card-text">Descripción: Segunda versión de un sistema con mejoras que utiliza un reporteador interno para gestionar reportes y monitorear cuentas</p>
-              <p class="card-text">Tecnología: PHP, HTML5, CSS, Bootstrap</p>
-              <a href="https://github.com/jjpedraza/crece2.0" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 5 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/rintera.png" target="_blank"><img src="img/rintera.png" class="card-img-top" alt="Rintera"></a>
-            <div class="card-body">
-              <h5 class="card-title">Rintera</h5>
-              <p class="card-text"><b>Fecha:</b> Marzo 2021</p>
-              <p class="card-text">Descripción: Framework en PHP para gestionar reportes, centralizarlos en una tabla con un ID y buscarlos a través de un buscador</p>
-              <p class="card-text">Tecnología: PHP, HTML5, CSS, Bootstrap</p>
-              <a href="https://github.com/jjpedraza/rintera" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 6 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/plataforma.png" target="_blank"><img src="img/plataforma.png" class="card-img-top" alt="Plataforma ITAVU"></a>
-            <div class="card-body">
-              <h5 class="card-title">Plataforma ITAVU</h5>
-              <p class="card-text"><b>Fecha:</b> Marzo 2021</p>
-              <p class="card-text">Descripción: Framework para el Instituto Tamaulipeco de Vivienda y Urbanismo para crear un ecosistema donde puedan convivir distintas aplicaciones conectadas a bases de datos</p>
-              <p class="card-text">Tecnología: PHP, HTML5, CSS, Bootstrap</p>
-              <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> GitHub Privado</a> -->
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 7 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/go.png" target="_blank"><img src="img/go.png" class="card-img-top" alt="GoLink"></a>
-            <div class="card-body">
-              <h5 class="card-title">GoLink</h5>
-              <p class="card-text"><b>Fecha:</b> Octubre 2020</p>
-              <p class="card-text">Descripción: Aplicación para subir archivos, administrarlos y generar hipervínculos</p>
-              <p class="card-text">Tecnología: PHP, MySQL, JavaScript</p>
-              <a href="https://github.com/jjpedraza/GoLink" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 8 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/alvarado.png" target="_blank"><img src="img/alvarado.png" class="card-img-top" alt="GYM ALVARADOS"></a>
-            <div class="card-body">
-              <h5 class="card-title">GYM ALVARADOS</h5>
-              <p class="card-text"><b>Fecha:</b> Junio 2016</p>
-              <p class="card-text">Descripción: Aplicación instalada localmente para llevar el control de las membresías y entradas al GYM</p>
-              <p class="card-text">Tecnología: PHP, MySQL, HTML5, CSS3</p>
-              <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> Sin Repositorio</a> -->
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 9 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/sys.png" target="_blank"><img src="img/sys.png" class="card-img-top" alt="Punto de Venta GestioAdmin"></a>
-            <div class="card-body">
-              <h5 class="card-title">Punto de Venta GestioAdmin</h5>
-              <p class="card-text"><b>Fecha:</b> Diciembre 2015</p>
-              <p class="card-text">Descripción: Software desarrollado para un negocio de abarrotes con sucursales que necesitaban conectarlas a través de su intranet</p>
-              <p class="card-text">Tecnología: PHP, MySQL, HTML5, CSS3</p>
-              <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> Sin Repositorio</a> -->
-            </div>
-          </div>
-        </div>
-  
-        <!-- Proyecto 10 -->
-        <div class="col-md-4">
-          <div class="card">
-            <a style="cursor:pointer" href="img/crece1.png" target="_blank"><img src="img/crece1.png" class="card-img-top" alt="Crece 1.0"></a>
-            <div class="card-body">
-              <h5 class="card-title">Crece 1.0</h5>
-              <p class="card-text"><b>Fecha:</b> Diciembre 2014</p>
-              <p class="card-text">Descripción: Aplicación basada en PHP y MySQL para gestionar préstamos, cartera vencida y solicitudes de préstamos y estudios socioeconómicos</p>
-              <p class="card-text">Tecnología: PHP, MySQL, HTML5, CSS3</p>
-              <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> Sin Repositorio</a> -->
-            </div>
-          </div>
-        </div>
-
-<!-- Proyecto 11 -->
-<div class="col-md-4">
-  <div class="card">
-    <a style="cursor:pointer" href="img/guerrero.png" target="_blank"><img src="img/guerrero.png" class="card-img-top" alt="Sistema Despacho Guerrero Silva"></a>
-    <div class="card-body">
-      <h5 class="card-title">Sistema Despacho Guerrero Silva</h5>
-      <p class="card-text"><b>Fecha:</b> Marzo 2015</p>
-      <p class="card-text">Descripción: Sistema de Contabilidad desarrollado en la nube para la administración de sus clientes y el cálculo de impuestos según las necesidades de la empresa.</p>
-      <p class="card-text">Tecnología: HTML5, AJAX, CSS3, PHP, MySQL</p>
-      <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> Sin Repositorio</a> -->
-    </div>
-  </div>
-</div>
-
-<!-- Proyecto 12 -->
-<div class="col-md-4">
-  <div class="card">
-    <a style="cursor:pointer" href="img/pinon.png" target="_blank"><img src="img/pinon.png" class="card-img-top" alt="Punto de Venta Refac. Piñon"></a>
-    <div class="card-body">
-      <h5 class="card-title">Punto de Venta Refac. Piñon</h5>
-      <p class="card-text"><b>Fecha:</b> Marzo 2007</p>
-      <p class="card-text">Descripción: Desarrollé un Sistema de punto de venta que administraba distintas sucursales de la Refaccionaria Piñon en Aldama, Tamaulipas.</p>
-      <p class="card-text">Tecnología: Visual Basic, MSSQL 2000</p>
-      <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> Sin Repositorio</a> -->
-    </div>
-  </div>
-</div>
-
-<!-- Proyecto 13 -->
-<div class="col-md-4">
-  <div class="card">
-    <a style="cursor:pointer" href="img/geo1.png" target="_blank"><img src="img/geo1.png" class="card-img-top" alt="Punto de Venta Yamileth Boutique"></a>
-    <div class="card-body">
-      <h5 class="card-title">Punto de Venta Yamileth Boutique</h5>
-      <p class="card-text"><b>Fecha:</b> Marzo 2008</p>
-      <p class="card-text">Descripción: Desarrollé un Sistema de punto de venta para gestionar una Boutique.</p>
-      <p class="card-text">Tecnología: Visual Basic, MSSQL 2000</p>
-      <!-- <a href="#" class="btn btn-link"><i class="fab fa-github"></i> Sin Repositorio</a> -->
-    </div>
-  </div>
-</div>
-
-<!-- Proyecto 14 -->
-<div class="col-md-4">
-  <div class="card">
-    <a style="cursor:pointer" href="img/gepladoc.png" target="_blank"><img src="img/gepladoc.png" class="card-img-top" alt="GePlaDoc Gestor de Plantillas de Word"></a>
-    <div class="card-body">
-      <h5 class="card-title">GePlaDoc Gestor de Plantillas de Word</h5>
-      <p class="card-text"><b>Fecha:</b> Septiembre 2021</p>
-      <p class="card-text">Descripción: Función en PHP para invocar un color hex o rgb aleatorio o continuo. Puede invocarse varias veces el color y dará uno de los que encuentre. De esta manera, en tu diseño podrás implementar todos los rosas u otro color de tu preferencia.</p>
-      <p class="card-text">Tecnología: PHP, MySQL, JavaScript</p>
-      <a href="https://github.com/jjpedraza/GePlaDoc" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </div>
-</div>
-
-<!-- Proyecto 15 -->
-<div class="col-md-4">
-  <div class="card">
-    <!-- <a style="cursor:pointer" href="#" target="_blank"><img src="" class="card-img-top" alt="Colorin"></a> -->
-    <div class="card-body">
-      <h5 class="card-title">Colorin</h5>
-      <p class="card-text"><b>Fecha:</b> Julio 2021</p>
-      <p class="card-text">Descripción: La aplicación permite subir un archivo de Word como plantilla (.docx) y sustituir palabras reservadas para variables que se solicitan vía API POST y respuesta en JSON, para ser utilizado el archivo de la plantilla rellenado con las variables.</p>
-      <p class="card-text">Tecnología: PHP</p>
-      <a href="https://github.com/jjpedraza/colorin" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </div>
-</div>
-
-<!-- Proyecto 16 -->
-<div class="col-md-4">
-  <div class="card">
-    <a style="cursor:pointer" href="img/sqlserver.png" target="_blank"><img src="img/sqlserver.png" class="card-img-top" alt="API MS SQL Server"></a>
-    <div class="card-body">
-      <h5 class="card-title">API MS SQL Server</h5>
-      <p class="card-text"><b>Fecha:</b> Agosto 2020</p>
-      <p class="card-text">Descripción: En ASP Classic, para servidores que tengan acceso a bases de datos MSSQL-Server; convierte las consultas en JSON. La usé en varios proyectos para conectar MySQL a bases de datos MS SQL Server, manteniendo una conexión estable.</p>
-      <p class="card-text">Tecnología: ASP</p>
-      
-    </div>
-  </div>
-</div>
-
-<!-- Proyecto 17 -->
-<div class="col-md-4">
-  <div class="card">
-    <a style="cursor:pointer" href="img/procimart.png" target="_blank"><img src="img/procimart.png" class="card-img-top" alt="Procimart"></a>
-    <div class="card-body">
-      <h5 class="card-title">Procimart</h5>
-      <p class="card-text"><b>Fecha:</b> Enero 2020</p>
-      <p class="card-text">Descripción: Es un proyecto para gestionar reportes en una base de datos de MS-SQLSERVER de un servidor remoto en la Planta de producción; la aplicación toma los datos de allí y administra las ventas y la oferta del producto.</p>
-      <p class="card-text">Tecnología: ASP</p>
-      <a href="https://github.com/jjpedraza/ProciMart" class="btn btn-link"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-
-
-
-<hr>
-<div class="container" id="PaginasWeb">
-  <h1 style="text-align: center;">Portafolio de Páginas Web:</h1>
-  <p style="text-align: center;">Te muestro algunas páginas web que he realizado, espero que te sirvan como referencia de mi trabajo.</p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/computodo2023.png" target="_blank"><img src="img/computodo2023.png" class="card-img-top" alt="Computodo Tampico 2023"></a>
-        <div class="card-body">
-          <h5 class="card-title">Computodo Tampico 2023</h5>
-          <p class="card-text"><b>Fecha:</b> Mayo 2023</p>
-          <p class="card-text">Descripción: Página web para Computodo Tampico, se utiliza gestión con APIs para traer equipos de proveedores a la página web.</p>
-          <p class="card-text">Tecnología: PHP, MySQL, JavaScript</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-        </div>
-      </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/star.png" target="_blank"><img src="img/star.png" class="card-img-top" alt="Star Fence Contracting"></a>
-        <div class="card-body">
-          <h5 class="card-title">Star Fence Contracting</h5>
-          <p class="card-text"><b>Fecha:</b> Ene 2023</p>
-          <p class="card-text">Descripción: Página web para una empresa de fabricación de cercados en USA. Sitio web: <a href="http://www.starfencecontracting.online" target="_blank">www.starfencecontracting.online</a></p>
-          <p class="card-text">Tecnología: PHP, MySQL, JavaScript</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
+    <div class="container">
+        <!-- Terminal Header -->
+        <div class="terminal-header">
+            
+            
+            <div class="terminal-subtitle ">
+               “¿Necesitas un sistema, una herramienta web o automatizar un proceso? Puedo ayudarte a convertir tu idea en una solución funcional, moderna y totalmente a la medida.”
+            </div>
+            <div class="terminal-location ">Desarrollo Full Stack (PHP, MySQL, JavaScript, jQuery, AJAX, HTML5, CSS3)</div>
+            <div class="terminal-prompt">
+                <span class="prompt-user">root@jjpedraza</span>:<span class="prompt-path">~/portfolio</span>$
+                <span class="cursor"></span>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/rejuvene.png" target="_blank"><img src="img/rejuvene.png" class="card-img-top" alt="Rejuvene Spa"></a>
-        <div class="card-body">
-          <h5 class="card-title">RejuveneSpa.com</h5>
-          <p class="card-text"><b>Fecha:</b> Mayo 2023</p>
-          <p class="card-text">Descripción: Página web Rejuve Spa Medical en Mazatlán. Sitio web: <a href="http://www.rejuvenespa.com" target="_blank">www.rejuvenespa.com</a></p>
-          <p class="card-text">Tecnología: PHP, MySQL, JavaScript</p>
-          <a href="https://github.com/jjpedraza/rejuvenespa.com" class="btn btn-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/computodo1.png" target="_blank"><img src="img/computodo1.png" class="card-img-top" alt="Rejuvene Spa"></a>
+
+        <!-- Proyectos -->
+        <div class="section">
+            <div class="section-title">PORTAFOLIO:</div>
+          
+            
         
-        <div class="card-body">
-          <h5 class="card-title">Página Web de ComputodoTampico</h5>
-          <p class="card-text"><b>Fecha:</b> Julio 2016</p>
-          <p class="card-text">Descripción: Sitio web optimizado con Responsive Design para adaptarse a los diferentes dispositivos. Realizado para recibir cotizaciones al correo y que en el asunto diga la MARCA y qué tipo de EQUIPO es, así como cuando le den responder se envíe a correo cliente. Sitio web: <a href="https://computodotampico.com/" target="_blank">https://computodotampico.com/</a></p>
-          <p class="card-text">Tecnología: PHP, MySQL, HTML5, CSS3</p>
-          <a href="https://github.com/jjpedraza/computodo/" class="btn btn-link">GitHub</a>
+        <div class="project-card" id="proactiva">
+                <div class="project-number">Proactiva</div>
+                <h3 class="project-title">Calculadora de presupuestos</h3>
+
+                <div class="project-year">▸ Julio 2025, España</div>
+                <p class="project-desc">
+                    Un proyecto de calculadora de presupuestos para remodelaciones de residencias, basado en una formulario interactivo el usuario va seleccionando varios puntos, al final la plataforma envia un correo del presupuesto. Sobre wordpress, php y mysql
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/proactiva_1.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/proactiva_2.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/proactiva_3.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/proactiva_4.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/proactiva_5.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/proactiva_6.png" onclick="openImageModal(this.src,'');" class="project-image">                    
+                    
+                </div>
+                <div class="project-links">
+                    <!-- <a href="http://laserclinicerp.com " ><span>http://laserclinicerp.com   </span></a>                     -->
+                     
+                </div>
+            </div>
+           
         </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/ofertam.png" target="_blank"><img src="img/ofertam.png" class="card-img-top" alt="OFERTAM"></a>
-        <div class="card-body">
-          <h5 class="card-title">OFERTAM 2015-2016</h5>
-          <p class="card-text"><b>Fecha:</b> Noviembre 2015</p>
-          <p class="card-text">Descripción: La idea del proyecto fue de una imprenta que quería dar un servicio extra a sus clientes, al publicar las tarjetas y publicidad que les hacía en una página web llamada OFERTAM. Diseñé el sitio, así como el logo; el proyecto al final no salió a la luz por decisiones administrativas de la empresa.</p>
-          <p class="card-text">Tecnología: PHP, MySQL, HTML5, CSS3</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
+
+
+            <!-- PROYECTO 1 -->
+            <div class="project-card" id="emoodconsulta">
+                <div class="project-number">Consutas Emood</div>
+                <h3 class="project-title">Gestion de resultados del torno de gimnasia</h3>
+                <div class="project-stack">
+         
+                    <!-- <span class="tech-tag"><span>APIs REST</span></span> -->
+                </div>
+                <div class="project-year">▸ Enero 2025 - Mexico</div>
+                <p class="project-desc">
+                    Una aplicación web para la consulta de las gimnastas y sus calificaciones, dispersadas a través de clubes, asociaciones y comités; Actualmente es un proyecto que se encuentra en linea con mas de 5mil gimnastas y 400 usuarios, en México
+                </p>
+                <div class="project-gallery">             
+                    <img src="img/emoodconsulta_01.jpg" onclick="openImageModal(this.src,'EmoodConsulta');" class="project-image">
+                    <img src="img/emoodconsulta_02.jpg" onclick="openImageModal(this.src,'EmoodConsulta');" class="project-image">
+                    <img src="img/emoodconsulta_03.jpg" onclick="openImageModal(this.src,'EmoodConsulta');" class="project-image">
+                    <img src="img/emoodconsulta_04.jpg" onclick="openImageModal(this.src,'EmoodConsulta');" class="project-image">
+                    <img src="img/emoodconsulta_05.jpg" onclick="openImageModal(this.src,'EmoodConsulta');" class="project-image">
+                    <img src="img/emoodconsulta.gif" onclick="openImageModal(this.src,'EmoodConsulta');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://e-gym.org" ><span>https://e-gym.org</span></a>    
+                    <a href="img/emoodconsulta_manual.pdf" ><span>Manual</span></a>                                    
+                </div>
+            </div>
+
+
+              
+            <div class="project-card" id="securqr">
+                <div class="project-number">Secure QR</div>
+                <h3 class="project-title">Gestion de residencias</h3>
+                <div class="project-stack">
+              
+                    <!-- <span class="tech-tag"><span>APIs REST</span></span> -->
+                </div>
+                <div class="project-year">▸ Diciembre 2024 - Mexico</div>
+                <p class="project-desc">
+                    Es una aplicación tipo SAS para la gestión de residencias, donde por medio de una membresía el cliente puede registrarlas, así como a sus residentes y equipo de seguridad. Entre las características que tiene es muro social, alertas, gestión de pagos, encuestas, invitaciones qr, los guardias pueden escaner con la cámara del celular la invitación, entre muchas otras con las que cuenta. El proyecto lo programe en php 8.2, mysql, jquery; use libreria bootstrap, sweetalert2 y un dashboard sbadmin
+                </p>
+                <div class="project-gallery">                                 
+                    <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/secureqr_02.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/secureqr_03.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/secureqr_04.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/secureqr_05.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/secureqr.gif" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://cadqr.com.mx/secureqr" ><span>https://cadqr.com.mx/secureqr</span></a>                    
+                     
+                </div>
+            </div>
+
+           
+
+            
+            <div class="project-card" id="rinovo">
+                <div class="project-number">Muebleria Rinovo - Ecuador</div>
+                <h3 class="project-title">Simulador de telas Rinovo</h3>
+                <div class="project-stack">                  
+                    <!-- <span class="tech-tag"><span>APIs REST</span></span> -->
+                </div>
+                <div class="project-year">▸ Septiembre 2024 - Guayas, Ecuador</div>
+                <p class="project-desc">
+                    Este es un simulador de telas para la Empresa Rinovo de Ecuador, el proyecto consiste en seleccionar uno de cuatro escenarios; después el usuario puede seleccionar una tela del catálogo disponible, y los escenarios se les cambiara la tela; también puede elegir un diseño de patas que se combina con la tela seleccionada. Una vez que tenga la selección puede pedir información sobre esa seleccion a traves de whatsapp. El proyecto lo programe en php 8.2, mysql, jquery;
+                </p>
+                <div class="project-gallery">                                                     
+                    <img src="img/rinovo_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/rinovo_02.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/rinovo_03.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/rinovo_04.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                    <img src="img/rinovo.gif" onclick="openImageModal(this.src,'SecureQR');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://rinovoec.com/" ><span>https://rinovoec.com/</span></a>                    
+                     
+                </div>
+            </div>
+           
         </div>
-      </div>
-    </div>
 
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/superequipos.png" target="_blank"><img src="img/superequipos.png" class="card-img-top" alt="Super Equipos SA de CV"></a>
-        <div class="card-body">
-          <h5 class="card-title">Super Equipos SA de CV</h5>
-          <p class="card-text"><b>Fecha:</b> Octubre 2015</p>
-          <p class="card-text">Descripción: Página web realizada para vender a través de internet sus productos, y los que se introdujeran con 0 pesos, pudiera el usuario pedir una cotización. De esta manera manejar las cotizaciones. Sitio web: <a href="http://www.superequipos.com" target="_blank">www.superequipos.com</a></p>
-          <p class="card-text">Tecnología: PHP, MySQL, HTML5, CSS3</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/ale.png" target="_blank"><img src="img/ale.png" class="card-img-top" alt="AleMazaltan"></a>
-        <div class="card-body">
-          <h5 class="card-title">AleMazaltan</h5>
-          <p class="card-text"><b>Fecha:</b> Enero 2009 - Marzo 2014</p>
-          <p class="card-text">Descripción: Mazatlán I. A. P Diseño de la Página Web, Promocionales y Asesoría de imagen corporativa. Sitio web: <a href="http://www.alemazatlan.com" target="_blank">www.alemazatlan.com</a></p>
-          <p class="card-text">Tecnología: HTML, CSS3</p>
-          <a href="https://github.com/jjpedraza/alemazatlan" class="btn btn-link">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/amecod.png" target="_blank"><img src="img/amecod.png" class="card-img-top" alt="Asociacion de Transplantes AMECOD"></a>
-        <div class="card-body">
-          <h5 class="card-title">Asociacion de Transplantes AMECOD</h5>
-          <p class="card-text"><b>Fecha:</b> Febrero 2013</p>
-          <p class="card-text">Descripción: Diseño de la Página Web, Promocionales y Asesoría de imagen corporativa para la Asociacion Mexicana de Coordinadores de Trasplantes. Sitio web: <a href="http://www.amecod.org" target="_blank">www.amecod.org</a></p>
-          <p class="card-text">Tecnología: HTML, CSS3</p>
-          <a href="https://github.com/jjpedraza/amecod" class="btn btn-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
 
- 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/diocesis.png" target="_blank"><img src="img/diocesis.png" class="card-img-top" alt="Pastoral Juvenil Diócesis Tuxpan"></a>
-        <div class="card-body">
-          <h5 class="card-title">Pastoral Juvenil Diócesis Tuxpan</h5>
-          <p class="card-text"><b>Fecha:</b> Septiembre 2008</p>
-          <p class="card-text">Descripción: Sitio Web de la Pastoral Juvenil, que incluye uno de los diseños más pulcros con transparencias en color blanco y azul, audio y animaciones, así como un blog, Chat, Galería y servidor de correos.</p>
-          <p class="card-text">Tecnología: HTML, CSS3</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/martinez.png" target="_blank"><img src="img/martinez.png" class="card-img-top" alt="SANTI MARTINEZ Fotografia"></a>
-        <div class="card-body">
-          <h5 class="card-title">SANTI MARTINEZ Fotografía</h5>
-          <p class="card-text"><b>Fecha:</b> Enero 2009</p>
-          <p class="card-text">Descripción: Página web para galería de fotos.</p>
-          <p class="card-text">Tecnología: HTML, CSS3</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-        </div>
-      </div>
-    </div>
 
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/espinosa.png" target="_blank"><img src="img/espinosa.png" class="card-img-top" alt="Escritor Alejandro Espinoza"></a>
-        <div class="card-body">
-          <h5 class="card-title">Escritor Alejandro Espinoza</h5>
-          <p class="card-text"><b>Fecha:</b> Agosto 2006</p>
-          <p class="card-text">Descripción: Página web para comercializar el Best Seller del escritor.</p>
-          <p class="card-text">Tecnología: HTML, CSS3</p>
-          <a href="https://github.com/jjpedraza/legionario" class="btn btn-link">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/aldama2002.png" target="_blank"><img src="img/aldama2002.png" class="card-img-top" alt="Pagina Web de Aldama 2002 - 2005"></a>
-        <div class="card-body">
-          <h5 class="card-title">Pagina Web de Aldama 2002 - 2005</h5>
-          <p class="card-text"><b>Fecha:</b> Febrero 2002</p>
-          <p class="card-text">Descripción: La primera vez que se hizo la página web del Ayuntamiento del Municipio de Aldama. Sitio web: <a href="http://www.aldama.gob.mx" target="_blank">www.aldama.gob.mx</a></p>
-          <p class="card-text">Tecnología: HTML, ASP</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/aldama2005.png" target="_blank"><img src="img/aldama2005.png" class="card-img-top" alt="Pagina Web de Aldama 2002 - 2005"></a>
         
-        <div class="card-body">
-          <h5 class="card-title">Pagina Web de Aldama 2005-2007</h5>
-          <p class="card-text"><b>Fecha:</b> Febrero 2002</p>
-          <p class="card-text">Descripción: Diseño de la página web del Municipio de Aldama, Tamaulipas. Sitio web: <a href="http://www.aldama.gob.mx" target="_blank">www.aldama.gob.mx</a></p>
-          <p class="card-text">Tecnología: HTML, FLASH y ASP</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
+            
+        <div class="project-card" id="emod">
+                <div class="project-number">Emood</div>
+                <h3 class="project-title">Gestion de gimnasia ritmica</h3>
+
+                <div class="project-year">▸ Octubre 2024 - Mexico</div>
+                <p class="project-desc">
+                    Es un sistema web ejecutado en la red de la federación donde gestiona la competencia de gimnastas, puntuaciones, panel para los jueces donde pueden votar por la gimnasta que esta en ejecutando. Cuenta con un monitor que muestra avisos, la gimnasta que esta participanto y la puntuación resutlante de las calificaciones de los jueces. Todo el sistema es gestionable. Desarrollado en php 8.2, mysql
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/emood_01.jpg" onclick="openImageModal(this.src,'Emood');" class="project-image">
+                    <img src="img/emood_02.jpg" onclick="openImageModal(this.src,'Emood');" class="project-image">
+                    <img src="img/emood_03.gif" onclick="openImageModal(this.src,'Emood');" class="project-image">
+                    <img src="img/emood_04.jpg" onclick="openImageModal(this.src,'Emood');" class="project-image">
+                    <img src="img/emood_05.jpg" onclick="openImageModal(this.src,'Emood');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="https://rinovoec.com/" ><span>https://rinovoec.com/</span></a>                     -->
+                     
+                </div>
+            </div>
+           
         </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/sotolamarina.png" target="_blank"><img src="img/sotolamarina.png" class="card-img-top" alt="Pagina Web de Soto la Marina 2005-2007"></a>
-        <div class="card-body">
-          <h5 class="card-title">Pagina Web de Soto la Marina 2005-2007</h5>
-          <p class="card-text"><b>Fecha:</b> Febrero 2005</p>
-          <p class="card-text">Descripción: Diseño de la página web del Municipio de Soto la Marina, Tamaulipas.</p>
-          <p class="card-text">Tecnología: HTML, ASP</p>
-          <a href="https://github.com/jjpedraza/sotolamarina" class="btn btn-link">GitHub</a>
+
+        
+            
+        <div class="project-card" id="infometrics">
+                <div class="project-number">Infometrix</div>
+                <h3 class="project-title">Tienda de Plantillas de Power point</h3>
+
+                <div class="project-year">▸ Julio 2024 - Monterrey Mexico</div>
+                <p class="project-desc">
+                    Esta fue una página web creada para la venta de plantillas de power point, con pagos por paypal y gestion de productos. Programada sin framework, php 7.4, mysql y jquery
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/infometrics_01.jpg" onclick="openImageModal(this.src,'Infometrix');" class="project-image">
+                    <img src="img/infometrics_02.gif" onclick="openImageModal(this.src,'Infometrix');" class="project-image">
+                    <img src="img/infometrics_03.gif" onclick="openImageModal(this.src,'Infometrix');" class="project-image">
+                    <img src="img/infometrics_04.gif" onclick="openImageModal(this.src,'Infometrix');" class="project-image">
+                    <img src="img/infometrics_recomendacion.png" onclick="openImageModal(this.src,'Infometrix');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="https://rinovoec.com/" ><span>https://rinovoec.com/</span></a>                     -->
+                     
+                </div>
+            </div>
+           
         </div>
-      </div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/museo2005.png" target="_blank"><img src="img/museo2005.png" class="card-img-top" alt="Pagina Web del Museo de Aldama 2005"></a>
-        <div class="card-body">
-          <h5 class="card-title">Pagina Web del Museo de Aldama 2005</h5>
-          <p class="card-text"><b>Fecha:</b> Febrero 2005</p>
-          <p class="card-text">Descripción: Página del Museo de Aldama Tamaulipas. Sitio web: <a href="http://www.museo.aldama.gob.mx" target="_blank">www.museo.aldama.gob.mx</a></p>
-          <p class="card-text">Tecnología: HTML, FLASH</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
+
+
+
+        
+            
+        <div class="project-card" id="feg">
+                <div class="project-number">FEG</div>
+                <h3 class="project-title">Gestion de flotillas y mantenimiento de autos</h3>
+
+                <div class="project-year">▸ Marzo 2024 - FEG, Queretaro Mexico</div>
+                <p class="project-desc">
+                    Un sistema web usado en la intranet de la empresa para gestionar el préstamo de los autos, destinos, kilometrajes y mantenimientos.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/feg_01.jpg" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_02.jpg" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_03.jpg" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_04.jpg" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_05.jpg" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_06.gif" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_07.gif" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                    <img src="img/feg_recomendacion.jpg" onclick="openImageModal(this.src,'FEG')" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="https://rinovoec.com/" ><span>https://rinovoec.com/</span></a>                     -->
+                     
+                </div>
+            </div>
+           
         </div>
-      </div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="card">
-        <a href="img/dif2005.png" target="_blank"><img src="img/dif2005.png" class="card-img-top" alt="Pagina Web del DIF de Aldama 2005"></a>
-        <div class="card-body">
-          <h5 class="card-title">Pagina Web del DIF de Aldama 2005</h5>
-          <p class="card-text"><b>Fecha:</b> Febrero 2005</p>
-          <p class="card-text">Descripción: Me tocó diseñar también la página del DIF municipal de Aldama, Tamaulipas.</p>
-          <p class="card-text">Tecnología: HTML, FLASH</p>
-          <!-- <a href="#" class="btn btn-link">GitHub</a> -->
+
+
+
+
+            
+        <div class="project-card" id="vozdeanuncio">
+                <div class="project-number">Voz de Anuncio</div>
+                <h3 class="project-title">Cotizador de anuncios</h3>
+
+                <div class="project-year">▸ Mayo 2024 - Priego de Cordoba, Cordoba España.</div>
+                <p class="project-desc">
+                    Esta es una página web realizada en wordpress donde desarrolle un cotizador cuya caracteristicas era contar las palabras del anuncio asi como algunos servicios adicionales, ofreciendo el pago por medio de Paypal. Asi como un panel para la gestion de esos registros y pagos. Use php 7.4 y mysql
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/vozdeanuncio_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_02.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_03.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_04.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_05.png" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_06.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_07.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/vozdeanuncio_09.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="https://rinovoec.com/" ><span>https://rinovoec.com/</span></a>                     -->
+                     
+                </div>
+            </div>
+           
         </div>
-      </div>
+
+        
+
+            
+        <div class="project-card" id="windu">
+                <div class="project-number">Windu</div>
+                <h3 class="project-title">Diseño y Gestion de Ventanas</h3>
+
+                <div class="project-year">▸ Junio 2024 - Internow cd Mexico.</div>
+                <p class="project-desc">
+                    Esta es una aplicación web para el diseño de ventanas, gestion de proyectos y presupuestos pdf. Cuenta con un gestionar de usuarios y permisos; El diseñado de ventanas es muy agil y puede seleccionar entre varios tipos y agregarle divisiones y diseños. Fue desarrollado en php 8.2, mysql y jquery.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/windu_00.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_02.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_03.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_04.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_05.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_06.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/windu_recomendacion.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="https://rinovoec.com/" ><span>https://rinovoec.com/</span></a>                     -->
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+        
+            
+        <div class="project-card" id="paul">
+                <div class="project-number">Paul Ehrlich</div>
+                <h3 class="project-title">Web & Gestión de PDFs</h3>
+
+                <div class="project-year">▸ Centro Medico Paul Ehrlich. Abril 2024 Antofagasta, Chile</div>
+                <p class="project-desc">
+                    Este fue una página web con un sistema web para foliar archivos pdf. La app lee un pdf y le agrega un código QR con un link de validación del archivo; de esta manera cuando el cliente lo imprime podran escanear el QR para validar su autenticidad, evitando con esto falsificaciones de los análisis de los trabajadores. El aplicativo tiene la gestión de las empresas para otorgarles usuarios vinculados a la misma y puedan consultar y descargar los archivos de los análisis; agilizando el trabajo por parte del centro médico en la dispersión de los archivos. Actualmente cuenta con 62 empresas, 2600 trabajadores y mas de 10300 archivos en actividad. Lo programe en php 8.2, mysql, jquery, boostrap.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/paul_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/paul_02.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/paul_03.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/paul_04.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/paul_05.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/paul_recomendacion.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://www.cmlpaulehrlich.cl/" ><span>https://www.cmlpaulehrlich.cl/</span></a>                    
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+        
+            
+        <div class="project-card" id="japon">
+                <div class="project-number">Shirushi</div>
+                <h3 class="project-title">Shirushi: “Me lleva a Japón”</h3>
+
+                <div class="project-year">▸ Septiembre 2023, Cd Mexico</div>
+                <p class="project-desc">
+                    Diseño de la app web para el registro del concurso de "Shirushi me lleva Japón " del 30 aniversario de la cadena de restaurantes Shirushi. Se creo tanto el registro, como el envio del ticket a través de correo. Además de un panel para la gestión de los registros. Use php 7.4 y mysql.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/shirushi_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/shirushi_02.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/shirushi_03.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/shirushi_04.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/shirushi_05.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/shirushi_06.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/shirushi_recomendacion.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="https://www.cmlpaulehrlich.cl/" ><span>https://www.cmlpaulehrlich.cl/</span></a>                     -->
+                     
+                </div>
+            </div>
+           
+        </div>
+
+        
+            
+        <div class="project-card" id="turesionline">
+                <div class="project-number">turesionline</div>
+                <h3 class="project-title">Gestion de residencias</h3>
+
+                <div class="project-year">▸ Oct. 2023 Bilbao, España</div>
+                <p class="project-desc">
+                    Una plataforma para la gestión de residencias para ancianos donde se pueden gestionar múltiples residencias, residentes, así como la administración de la farmacia, cocina, menús, incidencias, chat y muchos otros aspectos esenciales para este tipo de empresa. Lo programe en php 7.4, mysql y jquery.      
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/turesi_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_02.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_03.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_04.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_05.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_06.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_07.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/turesi_08.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://turesionline.com" ><span>https://turesionline.com</span></a>                    
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+
+
+        <div class="project-card" id="cadqr">
+                <div class="project-number">CADQR</div>
+                <h3 class="project-title">Control escolar con QR</h3>
+
+                <div class="project-year">▸ Agosto 2023 Zapopan Jalisco, Mexico</div>
+                <p class="project-desc">
+                    Desarrollo de una plataforma para la toma de asistencia mediante QR ya sea con la cámara del dispositivo o lector laser; el diseño permite a una escuela gestionar la asistencia, alertas por sms a los tutores, tiene modules donde pueden tanto los profesores como los padres consultar la información. Esta enfocado en SAS, lo que permite monetizarla a través de diferentes clientes.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                    <img src="img/cadqr_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/cadqr_02.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/cadqr_03.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                    <img src="img/cadqr_recomendacion.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://cadqr.com.mx/ " ><span>https://cadqr.com.mx/ </span></a>                    
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+        
+
+        <div class="project-card" id="cifdd">
+                <div class="project-number">CIFDD</div>
+                <h3 class="project-title">Gestion de Planeaciones escolares</h3>
+
+                <div class="project-year">▸ Sept 2023,Cd Mexico</div>
+                <p class="project-desc">
+                    Desarrollo de una plataforma con las herramientas para crear las planeaciones didácticas que requieren los profesores para su uso escolar; toma con base de datos extractos de los libros de texto autorizados. Actualmente es una plataforma usada por un porcentaje importante del magisterio. Utilice php 7.3 y mysql
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                        <img src="img/cifdd_01.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/cifdd_02.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/cifdd_03.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/cifdd_04.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/cifdd_05.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/cifdd_06.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="https://www.cifddherramientas.com " ><span>https://www.cifddherramientas.com  </span></a>                    
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+        
+
+        <div class="project-card" id="amsalud">
+                <div class="project-number">AMSALUD</div>
+                <h3 class="project-title">Gestion de clinica laser</h3>
+
+                <div class="project-year">▸ Julio 2023,Cd Mexico</div>
+                <p class="project-desc">
+                    Desarrollo de una plataforma para la gestión administrativa de la clínica, con administración de los catálogos, ventas, pacientes, proveedores y una conexión en tiempo real a la plataforma YNAB para el control de gastos. Use php 7.3 y mysql.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                        <img src="img/amsalud_01.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/amsalud_02.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                        <img src="img/amsalud_recomendacion.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <a href="http://laserclinicerp.com " ><span>http://laserclinicerp.com   </span></a>                    
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+
+        
+        <div class="project-card" id="muestralo">
+                <div class="project-number">MUESTRALO.MX</div>
+                <h3 class="project-title">Constructor de paginas web</h3>
+
+                <div class="project-year">▸ Agosto 2023,Cd Mexico</div>
+                <p class="project-desc">
+                    Desarrollo de una plataforma para la creación de sitios web basados en un esquema donde se pueden editar y agregarle productos a un catalogo, en el que los clientes pueden comprar y crear el carrito de compra, crea de manera fácil una lista y la enviarla por whatsapp al negocio para que sea atendida. Utilice php 7.3, y mysql.
+                </p>
+                <div class="project-gallery">                                 
+                    <!-- <img src="img/secureqr_01.jpg" onclick="openImageModal(this.src,'SecureQR');" class="project-image"> -->
+                       <img src="img/muestralo_01.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                       <img src="img/muestralo_02.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                       <img src="img/muestralo_03.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                       <img src="img/muestralo_04.gif" onclick="openImageModal(this.src,'');" class="project-image">
+                       <img src="img/muestralo_recomendacion.jpg" onclick="openImageModal(this.src,'');" class="project-image">
+                </div>
+                <div class="project-links">
+                    <!-- <a href="http://laserclinicerp.com " ><span>http://laserclinicerp.com   </span></a>                     -->
+                     
+                </div>
+            </div>
+           
+        </div>
+
+
+        <!-- Skills -->
+        <div class="section">
+            <div class="section-title">cat /etc/skills.conf</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL / SQL Server</li>
+                        <li>APIs RESTful</li>
+                        <li>WebServices SOAP</li>
+                        <li>VB6 / ASP Classic</li>
+                        <li>AJAX / JSON</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>JavaScript ES6+</li>
+                        <li>jQuery / AJAX</li>
+                        <li>HTML5 Semántico</li>
+                        <li>CSS3 / Responsive</li>
+                        <li>Boostrap</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Creative</h3>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>CorelDRAW Graphics</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Vectorización Pro</li>
+                        <li>Branding Corporativo</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure & DevOps</h3>
+                    <ul>
+                        <li>VMware vSphere</li>
+                        <li>Linux Server Admin</li>
+                        <li>WordPress Deployment</li>
+                        <li>FTPS / SSH</li>
+                        <li>Network Configuration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Hardware & Support</h3>
+                    <ul>
+                        <li>EPSON Certified Tech</li>
+                        <li>Brother Service</li>
+                        <li>Reparacion Computadoras, Impresoras, Proyectores, Miniprinter</li>
+                        <li>Diagnóstico Avanzado</li>
+                        <li>Soporte Especializado</li>
+                        <li>Reparacion plotter epson</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Liderazgo Técnico</li>
+                        <li>Gestión de Proyectos</li>
+                        <li>Documentación Técnica</li>
+                        <li>Resolución de Problemas</li>
+                        <li>Trabajo Remoto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="terminal-footer">
+            
+            <div class="contact-info">
+                <a href="mailto:printepolis@gmail.com">📧 printepolis@gmail.com</a> | 
+                <a href="tel:8343084287">📱 +52 833 390 9869</a> | 
+                <a href="https://github.com/jjpedraza" target="_blank">💻 GitHub</a>
+            </div>
+            <div class="footer-signature">
+                <div style="color: var(--monokai-purple); margin-bottom: 10px;">
+                    ▸ system_status: OPERATIONAL<br>
+                    ▸ uptime: 20+ años<br>
+                    ▸ response_time: &lt;24h
+                </div>
+                © 2025 Juan José Pedraza Perales | Tampico, Tamaulipas<br>
+                <span style="color: var(--monokai-comment); font-size: 11px;">
+                    root@portfolio:~$ exit
+                </span>
+            </div>
+        </div>
     </div>
 
+    <!-- WhatsApp Float -->
+    <!-- <div class="whatsapp-float">
+        <div class="whatsapp-label">Click aqui para enviarme whatsapp</div>
+        <a href="https://wa.me/528333909869?text=Hola%20Juan%20José,%20vi%20tu%20portfolio%20y%20me%20interesa%20contactarte" 
+           class="whatsapp-button" 
+           target="_blank"
+           aria-label="Contactar por WhatsApp">
+            <span class="whatsapp-icon"><img src="img/whatsapp.png" style="width:32px;"></span>
+        </a>
+    </div> -->
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Función para abrir imagen en modal
+        function openImageModal(imageSrc, imageTitle) {
+            Swal.fire({
+                title: imageTitle,
+                imageUrl: imageSrc,
+                imageAlt: imageTitle,
+                width: '80%',
+                padding: '5px',
+                background: '#1e1f1c',
+                color: '#f92672',
+                showCloseButton: true,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'swal-custom-popup',
+                    title: 'swal-custom-title',
+                    closeButton: 'swal-custom-close',
+                    image: 'swal-custom-image'
+                }
+            });
+        }
 
-  <div class="col-md-4">
-    <div class="card">
-      <a href="img/aldama2011.png" target="_blank"><img src="img/aldama2011.png" class="card-img-top" alt="Pagina Web del Ayuntamiento de Aldama 2011"></a>
-      <div class="card-body">
-        <h5 class="card-title">Pagina Web del Ayuntamiento de Aldama 2011</h5>
-        <p class="card-text"><b>Fecha:</b> Octubre 2011</p>
-        <p class="card-text">Descripción: Diseño de la página web de Aldama, Tamaulipas del 2011.</p>
-        <p class="card-text">Tecnología: HTML, CSS</p>
-        <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card">
-      <a href="img/dif2011.png" target="_blank"><img src="img/dif2011.png" class="card-img-top" alt="Pagina Web del DIF Municipal de Aldama, Tamaulipas 2011"></a>
-      <div class="card-body">
-        <h5 class="card-title">Pagina Web del DIF Municipal de Aldama, Tamaulipas 2011</h5>
-        <p class="card-text"><b>Fecha:</b> Octubre 2011</p>
-        <p class="card-text">Descripción: Diseño de la página web del DIF Aldama, Tamaulipas del 2011.</p>
-        <p class="card-text">Tecnología: HTML, CSS</p>
-        <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-      </div>
-    </div>
-  </div>
-
+        // Click en avatar de navegación
+        document.getElementById('navAvatar').addEventListener('click', function() {
+            Swal.fire({
+                title: 'Juan José Pedraza Perales',
+                html: `
+                    <div style="color: #a6e22e; font-family: 'Share Tech Mono', monospace; text-align: left; line-height: 1.8;">
+                        <p style="margin-bottom: 10px;">▸ <span style="color: #f92672;">Profesión:</span> Full Stack Developer</p>
+                        <p style="margin-bottom: 10px;">▸ <span style="color: #f92672;">Experiencia:</span> 20+ años</p>
+                        <p style="margin-bottom: 10px;">▸ <span style="color: #f92672;">Ubicación:</span> Tampico, Tamaulipas</p>
+                        <p style="margin-bottom: 10px;">▸ <span style="color: #f92672;">Especialización:</span> PHP, MySQL, JavaScript</p>
+                        <p style="margin-bottom: 10px;">▸ <span style="color: #f92672;">Email:</span> jj.pedrazaperales@gmail.com</p>
+                        <p style="margin-bottom: 10px;">▸ <span style="color: #f92672;">Teléfono:</span> 834 308 4287</p>
+                    </div>
+                `,
+                imageUrl: 'https://via.placeholder.com/200',
+                imageWidth: 200,
+                imageHeight: 200,
+                imageAlt: 'Juan José Pedraza',
+                showCloseButton: true,
+                showConfirmButton: false,
+                width: '600px',
+                background: '#1e1f1c',
+                color: '#f92672'
+            });
+        });
+    </script>
     
-
-
-<div class="col-md-4">
-  <div class="card">
-    <a href="img/dif2011.png" target="_blank"><img src="img/dif2011.png" class="card-img-top" alt="Pagina Web del DIF Municipal de Aldama, Tamaulipas 2011"></a>
-    <div class="card-body">
-      <h5 class="card-title">Pagina Web del DIF Municipal de Aldama, Tamaulipas 2011</h5>
-      <p class="card-text"><b>Fecha:</b> Octubre 2011</p>
-      <p class="card-text">Descripción: Diseño de la página web del DIF Aldama, Tamaulipas del 2011.</p>
-      <p class="card-text">Tecnología: HTML, CSS</p>
-      <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-    </div>
-  </div>
-</div>
-
-<div class="col-md-4">
-  <div class="card">
-    <a href="img/museo2011.png" target="_blank"><img src="img/museo2011.png" class="card-img-top" alt="Pagina Web del Museo Municipal de Aldama, Tamaulipas 2013"></a>
-    <div class="card-body">
-      <h5 class="card-title">Pagina Web del Museo Municipal de Aldama, Tamaulipas 2013</h5>
-      <p class="card-text"><b>Fecha:</b> Febrero 2013</p>
-      <p class="card-text">Descripción: Diseño de la página web del Museo Regional de Aldama, Tamaulipas del 2013.</p>
-      <p class="card-text">Tecnología: HTML, CSS</p>
-      <a href="https://github.com/jjpedraza/MuseoAldama2013" class="btn btn-link">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-md-4">
-  <div class="card">
-    <a href="img/laguna.png" target="_blank"><img src="img/laguna.png" class="card-img-top" alt="LAGUNA MADRE  Salts & Chemicals SA de CV Pagina Web"></a>
-    <div class="card-body">
-      <h5 class="card-title">LAGUNA MADRE  Salts & Chemicals SA de CV Pagina Web</h5>
-      <p class="card-text"><b>Fecha:</b> Febrero 2012</p>
-      <p class="card-text">Descripción: Desarrollé el sitio en HTML5 con CSS3, bajo la idea del cliente. Utilizando los colores de la empresa y el catálogo de ventas. La hice en inglés y en español.</p>
-      <p class="card-text">Tecnología: HTML, CSS</p>
-      <a href="https://github.com/jjpedraza/lagunamadre" class="btn btn-link">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-md-4">
-  <div class="card">
-    <a href="img/divina.png" target="_blank"><img src="img/divina.png" class="card-img-top" alt="Pagina de la Casa Hogar de Aldama, Tam."></a>
-    <div class="card-body">
-      <h5 class="card-title">Pagina de la Casa Hogar de Aldama, Tam.</h5>
-      <p class="card-text"><b>Fecha:</b> Febrero 2013</p>
-      <p class="card-text">Descripción: Realizada para difundir información referente a la casa hogar, así como para recibir donativos.</p>
-      <p class="card-text">Tecnología: HTML, CSS</p>
-      <!-- <a href="#" class="btn btn-link">GitHub</a> -->
-    </div>
-  </div>
-</div>
-
-<div class="col-md-4">
-  <div class="card">
-    <a href="img/geoweb.png" target="_blank"><img src="img/geoweb.png" class="card-img-top" alt="Pagina de la Boutique Georgina SJ"></a>
-    <div class="card-body">
-      <h5 class="card-title">Pagina de la Boutique Georgina SJ</h5>
-      <p class="card-text"><b>Fecha:</b> Febrero 2013</p>
-      <p class="card-text">Descripción: Proyecto realizado en WordPress; con tema a la medida, y enlazado a la tienda en Facebook del cliente. Se configuró un plug-in de DHL para la paquetería y Pago en línea con tarjeta.</p>
-      <p class="card-text">Tecnología: WordPress, JavaScript</p>
-      <a href="https://github.com/jjpedraza/georginasj" class="btn btn-link">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<div class="col-md-4">
-  <div class="card">
-    <a href="img/go.png" target="_blank"><img src="img/go.png" class="card-img-top" alt="Pagina web de la Organización HeroesCampesinos"></a>
-    <div class="card-body">
-      <h5 class="card-title">Pagina web de la Organización HeroesCampesinos</h5>
-      <p class="card-text"><b>Fecha:</b> Marzo 2020</p>
-      <p class="card-text">Descripción: Pagina Web para la Organización Heroes Campesinos del Bicentenario. www.heroescampesinos.org</p>
-      <p class="card-text">Tecnología: PHP, MYSQL, JavaScript</p>
-      <a href="https://github.com/jjpedraza/WebSite-HeroesCampesinos" class="btn btn-link">GitHub</a>
-    </div>
-  </div>
-</div>
-</div>
-
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div id="WABoton"></div>
 <script>
 jQuery(document).ready(function($){
   $('#WABoton').floatingWhatsApp({
-    phone: '528343088602',
+    phone: '528333909869',
     popupMessage: 'Hola 👋 ¿Que puedo hacer por ti?', 
     message: "", 
     showPopup: true, 
@@ -764,29 +1468,5 @@ jQuery(document).ready(function($){
 });
 </script>
 
-
-
-
-<footer class="bg-dark text-white text-center py-4" id="Contacto">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5>Contacto</h5>
-        <ul class="list-unstyled">
-          <li><i class="fas fa-envelope"></i> Correo: <a href="mailto:printepolis@gmail.com" class="text-white">printepolis@gmail.com</a></li>
-          <li><i class="fab fa-whatsapp"></i> Whatsapp: <a href="https://wa.me/8343088602" class="text-white">8343088602</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h5>Sígueme en Facebook</h5>
-        <p><a href="https://facebook.com/fotofix.pedraza" class="text-white"><i class="fab fa-facebook"></i> https://facebook.com/fotofix.Pedraza</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-=======
->>>>>>> 7b68d7f930ac6f2685b05e80cb744c24f2b67c0d
 </body>
 </html>
